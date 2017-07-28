@@ -1,0 +1,24 @@
+@import "../node_modules/susy/sass/susy";
+
+$susy: (
+    columns: susy-repeat(14),
+    gutter: 0,
+    math: fluid,
+    output: float
+);
+
+main{
+    margin-top: -111px;
+    width: span(14);
+}
+
+.slider{
+    margin-top: -111px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1240px;
+    z-index: 10;
+    float: left;
+}

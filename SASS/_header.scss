@@ -1,0 +1,82 @@
+@import "variables";
+@import "../node_modules/susy/sass/susy";
+
+$susy: (
+    columns: susy-repeat(14),
+    gutter: 0,
+    math: fluid,
+    output: float
+);
+
+header{
+    background: $nav-background;
+    position: relative;
+    z-index: 100;
+
+    nav{
+        width: span(10 at 5);
+        height: 45px;
+        float: right;
+
+        ul{
+            display: inline-block;
+            list-style-type: none;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+            li{
+                padding: 0.9em 2.1em;
+                margin: 0px;
+                display: inline-block;
+
+                a{
+                    font-family: $racc-font;
+                    color: $racc-white;
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+
+    #logo{
+        width: span(4);
+        height: 105px;
+        display: inline-block;
+        position: relative;
+        float: left;
+        #logo-image{
+            img{
+                display: block;
+                max-width: 100%;
+                margin: 7px auto;
+            }
+        }
+    }
+
+    #mainMenu{
+        width: span(8 at 5);
+        display: inline-block;
+        height: 60px;
+        position: relative;
+
+        #main-menu-list{
+            font-family: $racc-font;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: $font-black;
+
+            li{
+                a{padding: 1.5em 1.65em;
+                height: 100%;}
+
+                display: inline-block;
+                font-size: 15px;
+                line-height: 15px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
