@@ -218,12 +218,9 @@
       text-decoration: none;
       font-size: 2.5em;
       letter-spacing: 0;
-      margin: 0;
-      padding-right: 5vw;
       font-weight: 100;
       text-transform: uppercase;
       line-height: 1.2;
-      z-index: 20;
       color: white;
       font-family: "Raleway", sans-serif; }
     #slider-inside-text p {
@@ -231,7 +228,7 @@
 
 @media screen and (min-device-width: 1024px) {
   .slider {
-    margin-top: -1920px;
+    margin-top: -1130px;
     position: relative;
     top: 0;
     left: 0;
@@ -254,16 +251,15 @@
       height: 600px;
       width: 1024px;
       position: absolute; }
-      .slider .flexsliders .slides li #image-container {
+      .slider .flexsliders .slides li #image-continer {
         position: absolute;
         display: inline-block;
         top: 0;
         left: 0;
         width: 100%;
         margin-left: 0; }
-        .slider .flexsliders .slides li #image-container img {
+        .slider .flexsliders .slides li #image-continer img {
           min-height: 600px;
-          height: 600px;
           width: auto;
           top: 0; }
     .slider img {
@@ -317,7 +313,7 @@
     background: #fff;
     position: relative;
     z-index: 20;
-    top: -105vh; }
+    top: -405px; }
     .tabs #row1 {
       background: #f23522;
       height: 195px;
@@ -481,12 +477,15 @@
           list-style: none;
           padding-left: 0;
           margin-top: 2rem; }
-          .tabs #right-tabs div #left-column #left-column-content li {
+          .tabs #right-tabs div #left-column #left-column-content li a {
             font-size: 1rem;
             line-height: 2rem;
             color: #ff3333;
             font-family: "Raleway", sans-serif;
-            font-weight: 600; }
+            font-weight: 600;
+            text-decoration: none; }
+          .tabs #right-tabs div #left-column #left-column-content li:hover a {
+            text-decoration: underline; }
       .tabs #right-tabs div #right-column {
         margin-right: 0.8333333%;
         margin-left: 0.8333333%; }
@@ -690,11 +689,12 @@
     width: 98.33333%;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
-    margin-top: 110em;
+    margin-top: -80px;
     margin-bottom: 800px;
-    padding: 0 20px; }
+    padding: 0 20px;
+    float: left; }
     .news #news-div-title {
-      top: 500px;
+      top: -240px;
       position: relative; }
       .news #news-div-title h2 {
         font-family: "Raleway", sans-serif;
@@ -737,6 +737,8 @@
               height: auto;
               width: 100%;
               border: 0; }
+            .news #news-content #spotlight #spotlight-container #spotlight-image img:hover {
+              filter: grayscale(60%); }
           .news #news-content #spotlight #spotlight-container #spotlight-text {
             position: relative;
             width: 50%;
@@ -744,23 +746,33 @@
             padding: 0.5em 30px;
             margin-left: auto; }
             .news #news-content #spotlight #spotlight-container #spotlight-text #sp-title {
-              color: #fff;
-              line-height: 30px;
-              text-transform: uppercase;
-              font-size: 1.375rem;
-              font-weight: 400;
               margin-bottom: 4rem;
               margin-left: 3em;
               margin-right: 1em; }
+              .news #news-content #spotlight #spotlight-container #spotlight-text #sp-title a {
+                padding-top: 0.3em;
+                padding-left: 0.8em;
+                color: #fff;
+                line-height: 30px;
+                text-transform: uppercase;
+                font-size: 1.375rem;
+                font-weight: 400;
+                text-decoration: none; }
+            .news #news-content #spotlight #spotlight-container #spotlight-text #sp-title:hover a {
+              text-decoration: underline; }
             .news #news-content #spotlight #spotlight-container #spotlight-text #sp-subtitle {
-              color: #fff;
-              font-weight: 200;
-              margin-left: 1.8em;
+              margin-left: 4em;
               margin-right: 1em;
               margin-top: 25px;
-              margin-bottom: 1.5rem;
-              font-size: 2.1875rem;
-              line-height: 2.5rem; }
+              margin-bottom: 1.5rem; }
+              .news #news-content #spotlight #spotlight-container #spotlight-text #sp-subtitle a {
+                color: #fff;
+                font-weight: 200;
+                font-size: 2.1875rem;
+                line-height: 2.5rem;
+                text-decoration: none; }
+            .news #news-content #spotlight #spotlight-container #spotlight-text #sp-subtitle:hover a {
+              text-decoration: underline; }
             .news #news-content #spotlight #spotlight-container #spotlight-text #sp-body {
               color: #fff;
               font-size: 0.875rem;
@@ -782,6 +794,8 @@
           .news #news-content #other-news #news1 img {
             min-width: 100%;
             height: auto; }
+          .news #news-content #other-news #news1 img:hover {
+            filter: grayscale(60%); }
         .news #news-content #other-news #news2 {
           width: 48.3333%;
           float: left;
@@ -790,7 +804,9 @@
           position: relative; }
           .news #news-content #other-news #news2 img {
             min-width: 100%;
-            height: auto; } }
+            height: auto; }
+          .news #news-content #other-news #news2 img:hover {
+            filter: grayscale(60%); } }
 
 @font-face {
   font-family: 'Raleway';
@@ -899,7 +915,7 @@
         display: inline-block;
         vertical-align: middle;
         font-family: "Raleway", sans-serif; }
-        .upcoming #upcoming-content div #up-text p {
+        .upcoming #upcoming-content div #up-text a {
           color: #363636;
           font-size: 18px;
           line-height: 1.4; } }
@@ -909,9 +925,10 @@
     width: 98.33333%;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
-    margin-top: 1024px;
+    margin-top: -700px;
     margin-bottom: 0;
-    padding: 0 20px; }
+    padding: 0 20px;
+    float: left; }
     .upcoming #upcoming-div-title {
       margin-top: 20px;
       position: relative; }
@@ -993,14 +1010,17 @@
         width: 66%;
         display: inline-block;
         vertical-align: middle; }
-        .upcoming #upcoming-content div #up-text p {
+        .upcoming #upcoming-content div #up-text a {
           font-family: "Raleway", sans-serif;
           font-weight: 400;
           width: 100%;
           margin-bottom: 0;
           color: #363636;
           line-height: 1.4;
-          font-size: 18px; } }
+          font-size: 18px;
+          text-decoration: none; }
+      .upcoming #upcoming-content div #up-text:hover a {
+        text-decoration: underline; } }
 
 @media screen and (max-device-width: 480px) {
   .social {
@@ -1017,32 +1037,80 @@
       display: none; } }
 
 @media screen and (min-device-width: 1024px) {
-  .social #get-connected {
-    width: 25%;
+  .social {
     float: left;
-    overflow: hidden;
-    margin: 0; }
-    .social #get-connected img {
-      width: 100%;
-      height: auto; }
-  .social #insta-block {
-    width: 25%;
-    float: left;
-    overflow: hidden;
-    margin: 0;
-    position: relative; }
-    .social #insta-block img {
-      width: 100%;
-      height: auto; }
-  .social #twitter-block {
-    width: 25%;
-    float: left;
-    overflow: hidden;
-    margin: 0;
-    position: relative; }
-    .social #twitter-block img {
-      width: 100%;
-      height: auto; } }
+    margin-top: -400px; }
+    .social #get-connected {
+      width: 25%;
+      float: left;
+      overflow: hidden;
+      margin: 0; }
+      .social #get-connected img {
+        width: 100%;
+        height: auto; }
+    .social #insta-block1 {
+      width: 25%;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      position: relative; }
+      .social #insta-block1 img {
+        width: 100%;
+        height: auto; }
+    .social #insta-block2 {
+      width: 25%;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      position: relative; }
+      .social #insta-block2 img {
+        width: 100%;
+        height: auto; }
+    .social #insta-block3 {
+      width: 25%;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      position: relative; }
+      .social #insta-block3 img {
+        width: 100%;
+        height: auto; }
+    .social #insta-block4 {
+      width: 25%;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      position: relative; }
+      .social #insta-block4 img {
+        width: 100%;
+        height: auto; }
+    .social #twitter-block1 {
+      width: 25%;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      position: relative; }
+      .social #twitter-block1 img {
+        width: 100%;
+        height: auto; }
+    .social #twitter-block2 {
+      width: 25%;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      position: relative; }
+      .social #twitter-block2 img {
+        width: 100%;
+        height: auto; }
+    .social #twitter-block3 {
+      width: 25%;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      position: relative; }
+      .social #twitter-block3 img {
+        width: 100%;
+        height: auto; } }
 
 @font-face {
   font-family: 'Raleway';
@@ -1265,13 +1333,13 @@
       footer .footer-left .footer-links {
         margin-top: 7%;
         padding-bottom: 30px;
-        margin-left: 18%; }
+        margin-left: 10%; }
         footer .footer-left .footer-links ul {
           list-style: none; }
           footer .footer-left .footer-links ul li {
-            width: 30%;
+            width: 24%;
             float: left;
-            margin-left: 2%;
+            margin-left: 1%;
             margin-block-start: 2%; }
             footer .footer-left .footer-links ul li p {
               font-family: "Raleway", sans-serif;
@@ -1282,13 +1350,17 @@
             footer .footer-left .footer-links ul li ul {
               list-style: none; }
               footer .footer-left .footer-links ul li ul li {
-                width: 100%; }
-                footer .footer-left .footer-links ul li ul li p {
+                width: 100%;
+                margin-bottom: 10px;
+                margin-left: -2.5em; }
+                footer .footer-left .footer-links ul li ul li a {
                   color: white;
                   font-family: "Raleway", sans-serif;
                   font-weight: 500;
-                  margin-bottom: 10px;
-                  font-size: 12px; }
+                  font-size: 12px;
+                  text-decoration: none; }
+                footer .footer-left .footer-links ul li ul li a:hover {
+                  text-decoration: underline; }
       footer .footer-left .footer-social {
         margin-left: 32%;
         float: left;

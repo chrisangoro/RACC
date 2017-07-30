@@ -58,17 +58,15 @@ $susy: (
          margin-top: 24em;
 
          .slide-title{
-             text-decoration: none;
-             font-size: 2.5em;
-             letter-spacing: 0;
-             margin: 0;
-             padding-right: 5vw;
-             font-weight: 100;
-             text-transform: uppercase;
-             line-height: 1.2;
-             z-index: 20;
-             color: white;
-             font-family: $racc-font;
+
+                text-decoration: none;
+                font-size: 2.5em;
+                letter-spacing: 0;
+                font-weight: 100;
+                text-transform: uppercase;
+                line-height: 1.2;
+                color: white;
+                font-family: $racc-font;
          }
         
          p{
@@ -79,7 +77,7 @@ $susy: (
 
 .slider{
     @media screen and (min-device-width: 1024px){
-        margin-top: -1920px;
+        margin-top: -1130px;
         position: relative;
         top: 0;
         left: 0;
@@ -108,7 +106,7 @@ $susy: (
 
                 li{
 
-                    #image-container{
+                    #image-continer{
                         position: absolute;
                         display: inline-block;
                         top: 0;
@@ -117,8 +115,7 @@ $susy: (
                         margin-left: 0;
 
                         img{
-                            min-height: 600px;
-                            height: 600px;
+                            min-height: 600px;;
                             width: auto;
                             top: 0;
                         }

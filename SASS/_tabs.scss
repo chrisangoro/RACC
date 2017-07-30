@@ -15,7 +15,7 @@ $susy: (
         background: $racc-white;
         position: relative;
         z-index: 20;
-        top: -105vh;
+        top: -405px;
         
         #row1{
             background: $racc-red;
@@ -236,11 +236,20 @@ $susy: (
                         margin-top: 2rem;
 
                         li{
-                            font-size: 1rem;
-                            line-height: 2rem;
-                            color: $racc-red-font;
-                            font-family: $racc-font;
-                            font-weight: 600;
+                            a{
+                                font-size: 1rem;
+                                line-height: 2rem;
+                                color: $racc-red-font;
+                                font-family: $racc-font;
+                                font-weight: 600;
+                                text-decoration: none;
+                            }                           
+                        }
+
+                        li:hover{
+                            a{
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }

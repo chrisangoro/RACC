@@ -119,12 +119,13 @@ $susy: (
         width: 98.33333%;
         margin-left: 0.83333%;
         margin-right: 0.83333%;
-        margin-top: 110em;
+        margin-top: -80px;
         margin-bottom: 800px;
         padding: 0 20px;
+        float: left;
 
         #news-div-title{
-            top: 500px;
+            top: -240px;
             position: relative;
 
             h2{
@@ -178,6 +179,10 @@ $susy: (
                             width: 100%;
                             border: 0;
                         }
+
+                        img:hover{
+                            filter: grayscale(60%);
+                        }
                     }
 
                     #spotlight-text{
@@ -189,25 +194,44 @@ $susy: (
                         margin-left: auto;
 
                         #sp-title{
-                            color: $racc-white;
-                            line-height: 30px;
-                            text-transform: uppercase;
-                            font-size: 1.375rem;
-                            font-weight: 400;
                             margin-bottom: 4rem;
                             margin-left: 3em;
                             margin-right: 1em;
+                            a{
+                                padding-top: 0.3em;
+                                padding-left: 0.8em;
+                                color: $racc-white;
+                                line-height: 30px;
+                                text-transform: uppercase;
+                                font-size: 1.375rem;
+                                font-weight: 400;
+                                text-decoration: none;
+                            }
+                        }
+
+                        #sp-title:hover{
+                            a{text-decoration: underline;}               
                         }
 
                         #sp-subtitle{
-                            color: $racc-white;
-                            font-weight: 200;
-                            margin-left: 1.8em;
+                            margin-left: 4em;
                             margin-right: 1em;
                             margin-top: 25px;
                             margin-bottom: 1.5rem;
-                            font-size: 2.1875rem;
-                            line-height: 2.5rem;
+
+                            a{
+                                color: $racc-white;
+                                font-weight: 200;
+                                font-size: 2.1875rem;
+                                line-height: 2.5rem;
+                                text-decoration: none;
+                            }                 
+                        }
+
+                        #sp-subtitle:hover{
+                            a{
+                                text-decoration: underline;
+                            }
                         }
 
                         #sp-body{
@@ -239,6 +263,10 @@ $susy: (
                         min-width: 100%;
                         height: auto;
                     }
+
+                    img:hover{
+                        filter: grayscale(60%);
+                    }
                 }
 
                 #news2{
@@ -251,6 +279,10 @@ $susy: (
                     img{
                         min-width: 100%;
                         height: auto;
+                    }
+
+                    img:hover{
+                        filter: grayscale(60%);
                     }
                 }
             }

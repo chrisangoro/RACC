@@ -90,10 +90,93 @@ var main = function(){
 
 //red filter on tabs images
     if ($('#row1').css('backgroun-color') == "#f23522") {
-        $('#row1').onmouseover(function(){
+        $('#row1').hover(function(){
             $('#filter').show();
         })
     }
+
+//social interactions
+    //get connected
+    $('#get-connected').mouseover(function(){
+        $(this).css("width", '24%', "height", 'auto', "margin", '0.5%')
+    })
+
+    $('#get-connected').mouseleave(function(){
+        $(this).css("width", '25%', "height", 'auto', "margin", '0')
+        //$(this).animate({width: '25%', height: 'auto', margin: 0}, 1000)
+    })
+
+    //insta-block
+    $('#insta-block1').mouseover(function(){
+        //$(this).animate({width: '24%', height: 'auto', margin : '0.5%'}, 1000)
+        $(this).css("width", '24%', "height", 'auto', "margin", '0.5%')
+    })
+
+    $('#insta-block1').mouseleave(function(){
+        //$(this).animate({width: '25%', height: 'auto', margin: 0}, 1000)
+        $(this).css("width", '25%', "height", 'auto', "margin", '0')
+    })
+
+    $('#insta-block2').mouseover(function(){
+        //$(this).animate({width: '24%', height: 'auto', margin : '0.5%'}, 1000)
+       // $(this).css("width", '24%', "height", 'auto', "margin", '0.5%')
+    })
+
+    $('#insta-block2').mouseleave(function(){
+        //$(this).animate({width: '25%', height: 'auto', margin: 0}, 1000)
+       // $(this).css("width", '25%', "height", 'auto', "margin", '0')
+    })
+
+    $('#insta-block3').mouseover(function(){
+        //$(this).animate({width: '24%', height: 'auto', margin : '0.5%'}, 1000)
+        $(this).css("width", '24%', "height", 'auto', "margin", '0.5%')
+    })
+
+    $('#insta-block3').mouseleave(function(){
+        //$(this).animate({width: '25%', height: 'auto', margin: 0}, 1000)
+        $(this).css("width", '25%', "height", 'auto', "margin", '0')
+    })
+
+    $('#insta-block4').mouseover(function(){
+        //$(this).animate({width: '24%', height: 'auto', margin : '0.5%'}, 1000)
+        $(this).css("width", '24%', "height", 'auto', "margin", '0.5%')
+    })
+
+    $('#insta-block4').mouseleave(function(){
+        //$(this).animate({width: '25%', height: 'auto', margin: 0}, 1000)
+        $(this).css("width", '25%', "height", 'auto', "margin", '0')
+    })
+
+    //twitter-block
+    $('#twitter-block1').mouseover(function(){
+        $(this).css("width", '24%', "height", 'auto', "margin", '0.5%')
+        //$(this).animate({width: '24%', height: 'auto', margin : '0.5%'}, 1000)
+    })
+
+    $('#twitter-block1').mouseleave(function(){
+        //$(this).animate({width: '25%', height: 'auto', margin: 0}, 1000)
+        $(this).css("width", '25%', "height", 'auto', "margin", '0')
+    })
+
+    $('#twitter-block2').mouseover(function(){
+        $(this).css("width", '24%', "height", 'auto', "margin", '0.5%')
+        //$(this).animate({width: '24%', height: 'auto', margin : '0.5%'}, 1000)
+    })
+
+    $('#twitter-block2').mouseleave(function(){
+        //$(this).animate({width: '25%', height: 'auto', margin: 0}, 1000)
+        $(this).css("width", '25%', "height", 'auto', "margin", '0')
+    })
+
+    $('#twitter-block3').mouseover(function(){
+        $(this).css("width", '24%', "height", 'auto', "margin", '0.5%')
+        //$(this).animate({width: '24%', height: 'auto', margin : '0.5%'}, 1000)
+    })
+
+    $('#twitter-block3').mouseleave(function(){
+       //$(this).animate({width: '25%', height: 'auto', margin: 0}, 1000)
+       $(this).css("width", '25%', "height", 'auto', "margin", '0')
+    })
 }
 
 $(document).ready(main);

@@ -97,7 +97,7 @@ $susy: (
                     vertical-align: middle;
                     font-family: $racc-font;
 
-                    p{
+                    a{
                         color: $racc-light-black;
                         font-size: 18px;
                         line-height: 1.4;
@@ -113,9 +113,10 @@ $susy: (
         width: 98.33333%;
         margin-left: 0.83333%;
         margin-right: 0.83333%;
-        margin-top: 1024px;
+        margin-top: -700px;
         margin-bottom: 0;
         padding: 0 20px;
+        float: left;
 
         #upcoming-div-title{
             margin-top: 20px;
@@ -219,7 +220,7 @@ $susy: (
                     display: inline-block;
                     vertical-align: middle;
 
-                    p{
+                    a{
                         font-family: $racc-font;
                         font-weight: 400;
                         width: 100%;
@@ -227,6 +228,13 @@ $susy: (
                         color: $racc-light-black;
                         line-height: 1.4;
                         font-size: 18px;
+                        text-decoration: none;
+                    }
+                }
+
+                #up-text:hover{
+                    a{
+                        text-decoration: underline;
                     }
                 }
             }
