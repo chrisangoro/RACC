@@ -18,12 +18,13 @@ $susy: (
         top: -105vh;
         
         #row1{
-            background: $racc-grey1;
+            background: $racc-red;
             height: 195px;
             width: span(5);
             margin-bottom: 0px;
             float: none;
             display: flex;
+            cursor: pointer;
 
             #i-want-to{
                 font-family: $racc-font;
@@ -44,6 +45,7 @@ $susy: (
             margin-bottom: 0px;
             float: none;
             display: flex;
+            cursor: pointer;
 
             #apply-now{
                 font-family: $racc-font;
@@ -64,6 +66,7 @@ $susy: (
             margin-bottom: 0px;
             float: none;
             display: flex;
+            cursor: pointer;
 
             #how-to{
                 font-family: $racc-font;
@@ -84,6 +87,7 @@ $susy: (
             margin-bottom: 0px;
             float: none;
             display: flex;
+            cursor: pointer;
 
             #student-life{
                 font-family: $racc-font;
@@ -109,6 +113,14 @@ $susy: (
                 position: relative;
                 overflow: hidden;
 
+                #filter{
+                    display: none;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(242, 53, 34, 0.5);
+                    z-index: 500;
+                }
+
                 img{
                     width: 100%;
                     height: auto;
@@ -121,6 +133,14 @@ $susy: (
                 height: 413px;
                 position: relative;
                 overflow: hidden;
+
+                #filter{
+                    display: none;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(242, 53, 34, 0.5);
+                    z-index: 500;
+                }
 
                 img{
                     width: 100%;
@@ -135,6 +155,14 @@ $susy: (
                 position: relative;
                 overflow: hidden;
 
+                #filter{
+                    display: none;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(242, 53, 34, 0.5);
+                    //z-index: 500;
+                }
+
                 img{
                     width: 100%;
                     height: auto;
@@ -147,6 +175,12 @@ $susy: (
                 height: 413px;
                 position: relative;
                 overflow: hidden;
+
+                #filter{
+                    display: none;
+                    background-color: rgba(242, 53, 34, 0.5);
+                    z-index: 500;
+                }
 
                 img{
                     width: 100%;
@@ -239,6 +273,9 @@ $susy: (
 }
 
 @media screen and (max-device-width: 480px){
+
+    #filter{display: none;}
+
     .tabs{
         width: 100%;
         top: 0;

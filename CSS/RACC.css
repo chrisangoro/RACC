@@ -319,12 +319,13 @@
     z-index: 20;
     top: -105vh; }
     .tabs #row1 {
-      background: #87888e;
+      background: #f23522;
       height: 195px;
       width: 32.43243%;
       margin-bottom: 0px;
       float: none;
-      display: flex; }
+      display: flex;
+      cursor: pointer; }
       .tabs #row1 #i-want-to {
         font-family: "Raleway", sans-serif;
         font-weight: 100;
@@ -340,7 +341,8 @@
       width: 32.43243%;
       margin-bottom: 0px;
       float: none;
-      display: flex; }
+      display: flex;
+      cursor: pointer; }
       .tabs #row2 #apply-now {
         font-family: "Raleway", sans-serif;
         font-weight: 100;
@@ -356,7 +358,8 @@
       width: 32.43243%;
       margin-bottom: 0px;
       float: none;
-      display: flex; }
+      display: flex;
+      cursor: pointer; }
       .tabs #row3 #how-to {
         font-family: "Raleway", sans-serif;
         font-weight: 100;
@@ -372,7 +375,8 @@
       width: 32.43243%;
       margin-bottom: 0px;
       float: none;
-      display: flex; }
+      display: flex;
+      cursor: pointer; }
       .tabs #row4 #student-life {
         font-family: "Raleway", sans-serif;
         font-weight: 100;
@@ -392,6 +396,12 @@
         height: 413px;
         position: relative;
         overflow: hidden; }
+        .tabs #right-tabs #tabs-img #filter {
+          display: none;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(242, 53, 34, 0.5);
+          z-index: 500; }
         .tabs #right-tabs #tabs-img img {
           width: 100%;
           height: auto;
@@ -401,6 +411,12 @@
         height: 413px;
         position: relative;
         overflow: hidden; }
+        .tabs #right-tabs #tabs-img2 #filter {
+          display: none;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(242, 53, 34, 0.5);
+          z-index: 500; }
         .tabs #right-tabs #tabs-img2 img {
           width: 100%;
           height: auto;
@@ -410,6 +426,11 @@
         height: 413px;
         position: relative;
         overflow: hidden; }
+        .tabs #right-tabs #tabs-img3 #filter {
+          display: none;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(242, 53, 34, 0.5); }
         .tabs #right-tabs #tabs-img3 img {
           width: 100%;
           height: auto;
@@ -419,6 +440,10 @@
         height: 413px;
         position: relative;
         overflow: hidden; }
+        .tabs #right-tabs #tabs-img4 #filter {
+          display: none;
+          background-color: rgba(242, 53, 34, 0.5);
+          z-index: 500; }
         .tabs #right-tabs #tabs-img4 img {
           width: 100%;
           height: auto;
@@ -481,6 +506,8 @@
           line-height: 1.5rem; } }
 
 @media screen and (max-device-width: 480px) {
+  #filter {
+    display: none; }
   .tabs {
     width: 100%;
     top: 0;

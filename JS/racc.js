@@ -38,6 +38,62 @@ var main = function(){
         $('#dropdown-menu-1').hide(false);
     })
 
+//change tab info interactions
+    $('#row1').click(function(){
+        $('#tabs-img').show();
+        $('#tabs-img2').hide(false);
+        $('#tabs-img3').hide(false);
+        $('#tabs-img4').hide(false);
+
+        $('#row1').css("background-color", "#f23522");
+        $('#row2').css("background-color", "#999ba1");
+        $('#row3').css("background-color", "#bbbbbf");
+        $('#row4').css("background-color", "#cfcfd2");
+    })
+
+    $('#row2').click(function(){
+        $('#tabs-img2').show();
+        $('#tabs-img').hide(false);
+        $('#tabs-img3').hide(false);
+        $('#tabs-img4').hide(false);
+
+        $('#row2').css("background-color", "#f23522");
+        $('#row1').css("background-color", "#87888e");
+        $('#row3').css("background-color", "#bbbbbf");
+        $('#row4').css("background-color", "#cfcfd2");
+    })
+
+    $('#row3').click(function(){
+        $('#tabs-img3').show();
+        $('#tabs-img').hide(false);
+        $('#tabs-img2').hide(false);
+        $('#tabs-img4').hide(false);
+
+        $('#row3').css("background-color", "#f23522");
+        $('#row1').css("background-color", "#87888e");
+        $('#row2').css("background-color", "#999ba1");
+        $('#row4').css("background-color", "#cfcfd2");
+    })
+
+    $('#row4').click(function(){
+        $('#tabs-img4').show();
+        $('#tabs-img').hide(false);
+        $('#tabs-img2').hide(false);
+        $('#tabs-img3').hide(false);
+
+        $('#row4').css("background-color", "#f23522");
+        $('#row1').css("background-color", "#87888e");
+        $('#row2').css("background-color", "#999ba1");
+        $('#row3').css("background-color", "#bbbbbf");
+    })
+
+
+//red filter on tabs images
+    if ($('#row1').css('backgroun-color') == "#f23522") {
+        $('#row1').onmouseover(function(){
+            $('#filter').show();
+        })
+    }
 }
 
 $(document).ready(main);
