@@ -53,6 +53,7 @@ $susy: (
 
  @media screen and (max-device-width: 480px){
      #slider-inside-text{
+         display: none;
          margin-left: 0;
          left: 8vw;
          margin-top: 24em;
@@ -91,12 +92,12 @@ $susy: (
         height: 600px;
         width: 100%;
         margin-top: -70px;
-        overflow: hidden;
-        position: relative;
+        //overflow: hidden;
+        position: absolute;
         z-index: 10;
         display: block;
 
-        .flexsliders{
+    /*
 
             .slides{
                 overflow: hidden;
@@ -106,28 +107,30 @@ $susy: (
 
                 li{
 
-                    #image-continer{
-                        position: absolute;
-                        display: inline-block;
+                    div{
+                        position: relative;
+                        //display: inline-block;
                         top: 0;
                         left: 0;
                         width: 100%;
                         margin-left: 0;
 
                         img{
-                            min-height: 600px;;
+                            height: 600px;
                             width: auto;
                             top: 0;
+                            float: left;
                         }
                     }
                 }
             }
-        }
+        }*/
 
         img{
             //max-width: 1vw;
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 600px;
+            min-height: 600px
         }
     }
 }

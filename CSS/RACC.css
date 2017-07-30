@@ -138,7 +138,8 @@
   header {
     background: rgba(255, 255, 255, 0.7);
     position: relative;
-    z-index: 100; }
+    z-index: 150;
+    background: rgba(255, 255, 255, 0.5); }
     header #block-main-menu-mobile {
       float: right;
       width: 130px;
@@ -211,6 +212,7 @@
 
 @media screen and (max-device-width: 480px) {
   #slider-inside-text {
+    display: none;
     margin-left: 0;
     left: 8vw;
     margin-top: 24em; }
@@ -242,29 +244,41 @@
     height: 600px;
     width: 100%;
     margin-top: -70px;
-    overflow: hidden;
-    position: relative;
+    position: absolute;
     z-index: 10;
-    display: block; }
-    .slider .flexsliders .slides {
-      overflow: hidden;
-      height: 600px;
-      width: 1024px;
-      position: absolute; }
-      .slider .flexsliders .slides li #image-continer {
-        position: absolute;
-        display: inline-block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        margin-left: 0; }
-        .slider .flexsliders .slides li #image-continer img {
-          min-height: 600px;
-          width: auto;
-          top: 0; }
+    display: block;
+    /*
+
+            .slides{
+                overflow: hidden;
+                height: 600px;
+                width: 1024px;
+                position: absolute;
+
+                li{
+
+                    div{
+                        position: relative;
+                        //display: inline-block;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        margin-left: 0;
+
+                        img{
+                            height: 600px;
+                            width: auto;
+                            top: 0;
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }*/ }
     .slider img {
-      width: 100%;
-      height: auto; } }
+      width: auto;
+      height: 600px;
+      min-height: 600px; } }
 
 @font-face {
   font-family: 'Raleway';
@@ -657,6 +671,9 @@
             margin-bottom: 0;
             line-height: 30px;
             text-transform: uppercase; }
+            .news #spotlight #spotlight-container #spotlight-text #sp-title a {
+              text-decoration: none;
+              color: white; }
           .news #spotlight #spotlight-container #spotlight-text #sp-subtitle {
             display: none; }
           .news #spotlight #spotlight-container #spotlight-text #sp-body {
@@ -918,7 +935,8 @@
         .upcoming #upcoming-content div #up-text a {
           color: #363636;
           font-size: 18px;
-          line-height: 1.4; } }
+          line-height: 1.4;
+          text-decoration: none; } }
 
 @media screen and (min-device-width: 1024px) {
   .upcoming {
@@ -1432,7 +1450,7 @@
     position: relative;
     bottom: 90px;
     z-index: 20;
-    margin-top: 340px; }
+    margin-top: 540px; }
     .enroll span {
       background: white;
       font-size: 16px;
@@ -1441,7 +1459,7 @@
       color: #363636;
       text-align: center;
       font-family: "Raleway", sans-serif;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 1.25rem;
       font-size: 16px; } }
 
