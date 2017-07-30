@@ -8,143 +8,250 @@ $susy: (
     output: float
 );
 
-.news{
-    width: 98.33333%;
-    margin-left: 0.83333%;
-    margin-right: 0.83333%;
-    margin-top: 110em;
-    margin-bottom: 0;
-    padding: 0 20px;
+@media screen and (max-device-width: 480px){
+    .news{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 28px;
+        margin-bottom: 0;
+        padding: 0 20px;
 
-    #news-div-title{
-        margin-top: 20px;
-        position: relative;
-
-        h2{
+        #news-div-title{
             font-family: $racc-font;
-            margin: 29px 0 32px 11px;
-            font-size: 2.5rem;
-            line-height: 2.5rem;
+            position: relative;
+            display: block;
             color: $racc-title;
-            font-weight: 400;
+
+            h2{
+                margin: 29px 0 32px 11px;
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                font-weight: 400;
+            }
+
+            p{
+                right: 40px;
+                color: black;
+                text-align: right;
+                top: -8px;
+                font-size: 16px;
+                float: right;
+                position: absolute;
+            }
         }
 
-        p{
-            margin-top: 20px;
-            font-family: $racc-font;
-            margin-right: 22px;
-            right: 0;
-            text-align: right;
-            top: 8px;
-            position: absolute;
-            float: right;
-            width: 80px;
-            font-size: 16px;
-            color: $racc-title;
-            font-weight: 400;
-        }
-    }
-
-    #news-content{
-        float: left;
-        margin-top: -230px;
-        
         #spotlight{
-            width: 50%;
+            width: 98%;
+            margin-left: 1%;
+            margin-right: 1%;
             float: left;
 
             #spotlight-container{
-                height: 100%;
-                width: 96.666666%;
-                margin-left: 0.83333%;
-                margin-right: 0.83333%;
+                
                 background: $racc-grey1;
 
                 #spotlight-image{
-                    width: 50%;
-                    position: relative;
-                    overflow: hidden;
-                    float: left;
-
-                    img{
-                        display: block;
-                        height: auto;
-                        width: 100%;
-                        border: 0;
-                    }
+                    width: 100%;
+                    height: auto;
                 }
 
                 #spotlight-text{
-                    position: relative;
-                    width: 50%;
-                    //height: 100%;
+                    width: 100%;
+                    padding: 20px 30px;
                     font-family: $racc-font;
-                    padding: 0.5em 30px;
-                    margin-left: auto;
+                    color: white;
 
                     #sp-title{
-                        color: $racc-white;
+                        font-size: 20px;
+                        margin-bottom: 0;
                         line-height: 30px;
                         text-transform: uppercase;
-                        font-size: 1.375rem;
-                        font-weight: 400;
-                        margin-bottom: 4rem;
-                        margin-left: 3em;
-                        margin-right: 1em;
                     }
 
                     #sp-subtitle{
-                        color: $racc-white;
-                        font-weight: 200;
-                        margin-left: 1.8em;
-                        margin-right: 1em;
-                        margin-top: 25px;
-                        margin-bottom: 1.5rem;
-                        font-size: 2.1875rem;
-                        line-height: 2.5rem;
+                        display: none;
                     }
 
                     #sp-body{
-                        color: $racc-white;
-                        font-size: 0.875rem;
-                        line-height: 2;
-                        font-weight: 400;
-                        letter-spacing: 0.6px;
-                        margin-left: 4.8em;
-                        margin-right: 1em;
+                        display: block;
+                        font-size: 0.75rem;
+                        line-height: 1.25rem;
+                        margin-bottom: 0;
+                        letter-spacing: 0.7px;
                     }
                 }
             }
         }
 
         #other-news{
-            width: 50%;
+            width: 100%;
             float: left;
-            position: relative;
+            margin-top: 30px;
 
             #news1{
-                width: 48.3333%;
-                float: left;
-                margin-left: 0.8333%;
-                margin-right: 0.8333%;
-                position: relative;
+                width: 98%;
+                margin-left: 1%;
+                margin-right: 1%;
 
                 img{
-                    min-width: 100%;
+                    max-width: 100%;
                     height: auto;
                 }
             }
 
             #news2{
-                width: 48.3333%;
-                float: left;
-                margin-left: 0.8333%;
-                margin-right: 0.8333%;
-                position: relative;
+                width: 98%;
+                margin-left: 1%;
+                margin-right: 1%;
 
                 img{
-                    min-width: 100%;
+                    max-width: 100%;
                     height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width: 1024px){
+    .news{
+        width: 98.33333%;
+        margin-left: 0.83333%;
+        margin-right: 0.83333%;
+        margin-top: 110em;
+        margin-bottom: 800px;
+        padding: 0 20px;
+
+        #news-div-title{
+            top: 500px;
+            position: relative;
+
+            h2{
+                font-family: $racc-font;
+                margin: 29px 0 32px 11px;
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+                color: $racc-title;
+                font-weight: 400;
+            }
+
+            p{
+                font-family: $racc-font;
+                margin-right: 22px;
+                right: 0;
+                text-align: right;
+                top: 8px;
+                position: absolute;
+                float: right;
+                width: 80px;
+                font-size: 16px;
+                color: $racc-title;
+                font-weight: 400;
+            }
+        }
+
+        #news-content{
+            float: left;
+            margin-top: -230px;
+            
+            #spotlight{
+                width: 50%;
+                float: left;
+
+                #spotlight-container{
+                    height: 100%;
+                    width: 96.666666%;
+                    margin-left: 0.83333%;
+                    margin-right: 0.83333%;
+                    background: $racc-grey1;
+
+                    #spotlight-image{
+                        width: 50%;
+                        position: relative;
+                        overflow: hidden;
+                        float: left;
+
+                        img{
+                            display: block;
+                            height: auto;
+                            width: 100%;
+                            border: 0;
+                        }
+                    }
+
+                    #spotlight-text{
+                        position: relative;
+                        width: 50%;
+                        //height: 100%;
+                        font-family: $racc-font;
+                        padding: 0.5em 30px;
+                        margin-left: auto;
+
+                        #sp-title{
+                            color: $racc-white;
+                            line-height: 30px;
+                            text-transform: uppercase;
+                            font-size: 1.375rem;
+                            font-weight: 400;
+                            margin-bottom: 4rem;
+                            margin-left: 3em;
+                            margin-right: 1em;
+                        }
+
+                        #sp-subtitle{
+                            color: $racc-white;
+                            font-weight: 200;
+                            margin-left: 1.8em;
+                            margin-right: 1em;
+                            margin-top: 25px;
+                            margin-bottom: 1.5rem;
+                            font-size: 2.1875rem;
+                            line-height: 2.5rem;
+                        }
+
+                        #sp-body{
+                            color: $racc-white;
+                            font-size: 0.875rem;
+                            line-height: 2;
+                            font-weight: 400;
+                            letter-spacing: 0.6px;
+                            margin-left: 4.8em;
+                            margin-right: 1em;
+                        }
+                    }
+                }
+            }
+
+            #other-news{
+                width: 50%;
+                float: left;
+                position: relative;
+
+                #news1{
+                    width: 48.3333%;
+                    float: left;
+                    margin-left: 0.8333%;
+                    margin-right: 0.8333%;
+                    position: relative;
+
+                    img{
+                        min-width: 100%;
+                        height: auto;
+                    }
+                }
+
+                #news2{
+                    width: 48.3333%;
+                    float: left;
+                    margin-left: 0.8333%;
+                    margin-right: 0.8333%;
+                    position: relative;
+
+                    img{
+                        min-width: 100%;
+                        height: auto;
+                    }
                 }
             }
         }

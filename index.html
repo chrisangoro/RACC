@@ -7,12 +7,14 @@
         <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
         <script src="FlexSlider/jquery.flexslider.js"></script>
+        <script src="JS/racc.js"></script>
         <script type="text/javascript" charset="utf-8">
             $(window).load(function() {
                 $('.flexslider').flexslider();
             });
         </script>
-        <meta name="viewport">
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0,
+         minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
         </head>
     <body>
         <header role="banner">
@@ -34,16 +36,70 @@
                 </div>
                 <div id="mainMenu">
                     <ul id="main-menu-list">
-                        <li><a>ABOUT RACC</a></li>
-                        <li><a>ACADEMICS</a></li>
-                        <li><a>ADMISSIONS</a></li>
-                        <li><a>STUDENT LIFE</a></li>
+                        <li><a href="#" id="menu-element-1">ABOUT RACC</a>
+                            <ul id="dropdown-menu-1">
+                                <li>ACREDITATIONS</li>
+                                <li>BOARD OF TRUSTEES</li>
+                                <li>BUSINESS OPPORTUNITIES</li>
+                                <li>CAMPUS AND MAP DIRECTIONS</li>
+                                <li>FACULTY STAFF AND DIRECTORY</li>
+                                <li>FOUNDATION FOR RACC</li>
+                                <li>HUMAN RESOURCES</li>
+                                <li>MEMBERSHIPS</li>
+                                <li>RESEARCH GUIDELINES</li>
+                                <li>SAFETY AND SECURITY</li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="menu-element-2">ACADEMICS</a>
+                            <ul id="dropdown-menu-2">
+                                <li>ACADEMIC ADVISING</li>
+                                <li>ACADEMIC CATALOG</li>
+                                <li>ACADEMIC ENRICHMENT</li>
+                                <li>ACADEMIC SUPPORT</li>
+                                <li>ACADEMIC TESTING CENTER</li>
+                                <li>CALENDAR OF EVENTS</li>
+                                <li>COMMUNITY EDUCATION</li>
+                                <li>EARLY COLLEGE PROGRAMS</li>
+                                <li>ESL PROGRAM</li>
+                                <li>HEALTH PROFFESSIONS</li>
+                                <li>ONLINE LEARNING</li>
+                                <li>SCHMIDT TRAINING TECHNOLOGY CEBTER</li>
+                                <li>YOCUM LIBRARY</li>   
+                            </ul>
+                        </li>
+                        <li><a href="#" id="menu-element-3">ADMISSIONS</a>
+                            <ul id="dropdown-menu-3">
+                                <li>HOW TO GET STARTED</li>
+                                <li>FINANCIAL AID</li>
+                                <li>PLACEMENT TESTING</li>
+                                <li>TUITION AND FEES</li>
+                                <li>ADMISIIONS FAQS</li>
+                                <li>OIRENTATION</li>
+                                <li>MEET THE STAFF</li>
+                                <li>SINKING SPRING INSTRUCTIONAL SITE</li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="menu-element-4">STUDENT LIFE</a>
+                            <ul id="dropdown-menu-4">
+                                <li>BOOKSTORE</li>
+                                <li>CLUBS AND ORGANIZATIONS</li>
+                                <li>FITNESS CENTER</li>
+                                <li>GRADUATION</li>
+                                <li>LEADERSHIP PROGRAM</li>
+                                <li>RACCY OLYMPICS</li>
+                                <li>RAVEN AMBASSADORS</li>
+                                <li>STUDENT HANDBOOK AND CATALOGS</li>
+                            </ul>
+                        </li>
                         <li><a>CONTACT</a></li>
                         <li id="apply-menu"><a>APPLY</a></li>
                     </ul>
                 </div>
                 <div id="block-main-menu-mobile">
-
+                    <div id="menu-mobile-container">
+                        <i class="fa fa-search"></i>
+                        <a href="#" id="menu-mobile"><i class="fa fa-bars"></i></a>
+                    </div>
                 </div>
         </header>
 
@@ -53,7 +109,49 @@
                     <div class="flexslider">
                         <ul class="slides">
                             <li>
-                              <img src="res/img/sliderBG.png">
+                                <div id="slider-inside-text">
+                                    <a href="#" class="slide-title">
+                                        enroll for fall <br> classes now
+                                    </a>
+                                    <p>
+                                        Need help with your tuition, fees or 
+                                        books? Apply for <br> a scholarship
+                                        today from the Foundation for RACC
+                                    </p>
+                                </div>
+                                <div id="image-continer">
+                                    <img src="res/img/sliderBG.png">
+                                </div>
+                            </li>
+                            <li>
+                                <div id="slider-inside-text">
+                                    <a href="#" class="slide-title">
+                                        enroll for fall <br> classes now
+                                    </a>
+                                    <p>
+                                        Need help with your tuition, fees or 
+                                        books? Apply for <br> a scholarship
+                                        today from the Foundation for RACC
+                                    </p>
+                                </div>
+                                <div id="image-continer">
+                                    <img src="res/img/slider2.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <div id="slider-inside-text">
+                                    <a href="#" class="slide-title">
+                                        enroll for fall <br> classes now
+                                    </a>
+                                    <p>
+                                        Need help with your tuition, fees or 
+                                        books? Apply for <br> a scholarship
+                                        today from the Foundation for RACC
+                                    </p>
+                                </div>
+                                <div id="image-continer">
+                                    <img src="res/img/slider3.png">
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -66,44 +164,171 @@
                         <div id="tabs-img">
                             <img src="res/img/tabsimg.png">
                         </div>
+                        <div id="tabs-img2">
+                            <img src="res/img/tabsimg.png">
+                        </div>
+                        <div id="tabs-img3">
+                            <img src="res/img/tabsimg.png">
+                        </div>
+                        <div id="tabs-img4">
+                            <img src="res/img/tabsimg.png">
+                        </div>
                         <div id="bottom-right">
-                        <div id="left-column">
-                            <p id="left-title">APPLY<br>ONLINE AS:</p>
-                            <ul id="left-column-content">
-                                <li>
-                                    <p> First-time College Student</p>
-                                </li>
-                                <li>
-                                    <p> Transfer Student</p>
-                                </li>
-                                <li>
-                                    <p> Returning Student </p>
-                                </li>
-                                <li>
-                                    <p> Nursing Candidate</p>
-                                </li>
-                                <li>
-                                    <p> Early Applicant</p>
-                                </li>
-                                <li>
-                                    <p> International Student</p>
-                                </li>
-                                <li>
-                                    <p> Student with a Disability</p>
-                                </li>
-                                <li>
-                                    <p> Guest Student </p>
-                                </li>
+                            <div id="left-column">
+                                <p id="left-title">APPLY<br>ONLINE AS:</p>
+                                <ul id="left-column-content">
+                                    <li>
+                                        <p> First-time College Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Transfer Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Returning Student </p>
+                                    </li>
+                                    <li>
+                                        <p> Nursing Candidate</p>
+                                    </li>
+                                    <li>
+                                        <p> Early Applicant</p>
+                                    </li>
+                                    <li>
+                                        <p> International Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Student with a Disability</p>
+                                    </li>
+                                    <li>
+                                        <p> Guest Student </p>
+                                    </li>
+                                </ul>
+                             </div>
+                            <div id="right-column">
+                                <p id="right-title"> APPLY<br>ONLINE AS: </p>
+                                <p id="right-text"> If you want answers from a
+                                        current RACC student, Raven Ambassadors can
+                                        help. The ambassadors will answer any 
+                                        question you have about life at the College.
+                                    </p>
+                            </div>
                         </div>
-                        <div id="right-column">
-                            <p id="right-title"> APPLY<br>ONLINE AS: </p>
-                            <p id="right-text"> If you want answers from a
-                                    current RACC student, Raven Ambassadors can
-                                    help. The ambassadors will answer any 
-                                    question you have about life at the College.
-                                </p>
+                        <div id="bottom-right2">
+                            <div id="left-column">
+                                <p id="left-title">APPLY<br>ONLINE AS:</p>
+                                <ul id="left-column-content">
+                                    <li>
+                                        <p> First-time College Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Transfer Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Returning Student </p>
+                                    </li>
+                                    <li>
+                                        <p> Nursing Candidate</p>
+                                    </li>
+                                    <li>
+                                        <p> Early Applicant</p>
+                                    </li>
+                                    <li>
+                                        <p> International Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Student with a Disability</p>
+                                    </li>
+                                    <li>
+                                        <p> Guest Student </p>
+                                    </li>
+                                </ul>
+                             </div>
+                            <div id="right-column">
+                                <p id="right-title"> APPLY<br>ONLINE AS: </p>
+                                <p id="right-text"> If you want answers from a
+                                        current RACC student, Raven Ambassadors can
+                                        help. The ambassadors will answer any 
+                                        question you have about life at the College.
+                                    </p>
+                            </div>
                         </div>
-                    </div>
+                        <div id="bottom-right3">
+                            <div id="left-column">
+                                <p id="left-title">APPLY<br>ONLINE AS:</p>
+                                <ul id="left-column-content">
+                                    <li>
+                                        <p> First-time College Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Transfer Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Returning Student </p>
+                                    </li>
+                                    <li>
+                                        <p> Nursing Candidate</p>
+                                    </li>
+                                    <li>
+                                        <p> Early Applicant</p>
+                                    </li>
+                                    <li>
+                                        <p> International Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Student with a Disability</p>
+                                    </li>
+                                    <li>
+                                        <p> Guest Student </p>
+                                    </li>
+                                </ul>
+                             </div>
+                            <div id="right-column">
+                                <p id="right-title"> APPLY<br>ONLINE AS: </p>
+                                <p id="right-text"> If you want answers from a
+                                        current RACC student, Raven Ambassadors can
+                                        help. The ambassadors will answer any 
+                                        question you have about life at the College.
+                                    </p>
+                            </div>
+                        </div>
+                        <div id="bottom-right4">
+                            <div id="left-column">
+                                <p id="left-title">APPLY<br>ONLINE AS:</p>
+                                <ul id="left-column-content">
+                                    <li>
+                                        <p> First-time College Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Transfer Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Returning Student </p>
+                                    </li>
+                                    <li>
+                                        <p> Nursing Candidate</p>
+                                    </li>
+                                    <li>
+                                        <p> Early Applicant</p>
+                                    </li>
+                                    <li>
+                                        <p> International Student</p>
+                                    </li>
+                                    <li>
+                                        <p> Student with a Disability</p>
+                                    </li>
+                                    <li>
+                                        <p> Guest Student </p>
+                                    </li>
+                                </ul>
+                             </div>
+                            <div id="right-column">
+                                <p id="right-title"> APPLY<br>ONLINE AS: </p>
+                                <p id="right-text"> If you want answers from a
+                                        current RACC student, Raven Ambassadors can
+                                        help. The ambassadors will answer any 
+                                        question you have about life at the College.
+                                    </p>
+                            </div>
+                        </div>
                     </div>
                     <div id="row1">
                         <p id="i-want-to"> I WANT TO </p>

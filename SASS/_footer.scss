@@ -8,87 +8,179 @@ $susy: (
     output: float
 );
 
-footer{
-    background-color: $racc-footer-background;
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-
-    @media (min-width: 1024px){
+@media screen and (max-device-width: 480px){
+    footer{
+        background-color: $racc-footer-background;
+        display: inline-block;
+        width: 100%;
+        margin-top: -5px;
 
         .footer-mobile{
-            display: none;
-        }
 
-        .footer-left{
-            width: 70%;
-            list-style: none;
-            float: left;
-
-            .footer-links{
-                margin-top: 7%;
-                padding-bottom: 30px;
-                margin-left: 18%;
+            #footer-menu{
+                padding: 0 15px;
+                width: 92%;
+                margin-left: 4%;
+                margin-right: 4%;
+                display: block;
 
                 ul{
                     list-style: none;
 
                     li{
-                        width: 30%;
-                        float: left;
-                        margin-left: 2%;
-                        margin-block-start: 2%;
+                        width: 100%;
+                        margin-bottom: 1.2em;
 
                         p{
+                            background-color: #231f20;
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+                            padding: 0.8em 0 0.5em 0;
                             font-family: $racc-font;
-                            font-weight: 500;
-                            color: $racc-red;
-                            margin-bottom: 10px;
-                            font-size: 12px;
-                        }
-
-                        ul{
-                            list-style: none;
-
-                            li{
-                                width: 100%;
-
-                                p{
-                                    color: white;
-                                    font-family: $racc-font;
-                                    font-weight: 500;
-                                    margin-bottom: 10px;
-                                    font-size: 12px;
-                                }
-                            }
+                            font-weight: 400;
+                            font-size: 1.5em;
+                            color: white;
                         }
                     }
                 }
             }
 
-            .footer-social{
-                margin-left: 32%;
-                float: left;
-                margin-bottom: 1.5rem;
-                margin-top: 5em;
+            #footer-m-logo{
+                width: 186px;
+                height: 114px;
+                position: relative;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
 
                 img{
-                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            #directions{
+                margin-top: 10px;
+                width: 92%;
+                margin-left: 4%;
+                margin-right: 4%;
+
+                p{
+                    font-family: $racc-font;
+                    font-weight: 300;
+                    text-align: center;
+                    margin-bottom: 0;
+                    color: white;
+                    font-size: 1.2em;
+                    letter-spacing: 1px;
+                    line-height: 25px;
+                }
+            }
+
+            #foter-m-social{
+
+                img{
+                    width: 100%;
                     height: auto;
                 }
             }
         }
 
+        .footer-left{
+            display: none;
+        }
+
         .footer-right{
-            width: 20%;
-            float: right;
-            margin-top: 83px;
-            margin-right: 6%;
-            
-            img{
-                max-width: 100%;
-                height: auto;
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (min-device-width: 1024px){
+    footer{
+        background-color: $racc-footer-background;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+
+        @media (min-width: 1024px){
+
+            .footer-mobile{
+                display: none;
+            }
+
+            .footer-left{
+                width: 70%;
+                list-style: none;
+                float: left;
+
+                .footer-links{
+                    margin-top: 7%;
+                    padding-bottom: 30px;
+                    margin-left: 18%;
+
+                    ul{
+                        list-style: none;
+
+                        li{
+                            width: 30%;
+                            float: left;
+                            margin-left: 2%;
+                            margin-block-start: 2%;
+
+                            p{
+                                font-family: $racc-font;
+                                font-weight: 500;
+                                color: $racc-red;
+                                margin-bottom: 10px;
+                                font-size: 12px;
+                            }
+
+                            ul{
+                                list-style: none;
+
+                                li{
+                                    width: 100%;
+
+                                    p{
+                                        color: white;
+                                        font-family: $racc-font;
+                                        font-weight: 500;
+                                        margin-bottom: 10px;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer-social{
+                    margin-left: 32%;
+                    float: left;
+                    margin-bottom: 1.5rem;
+                    margin-top: 5em;
+
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .footer-right{
+                width: 20%;
+                float: right;
+                margin-top: 83px;
+                margin-right: 6%;
+                
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
             }
         }
     }

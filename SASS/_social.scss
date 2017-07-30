@@ -1,39 +1,65 @@
-.social{
-    #get-connected{
-        width: 25%;
-        float: left;
-        overflow: hidden;
-        margin: 0;
+@media screen and (max-device-width: 480px){
+    .social{
+        width: 100%;
+        display: block;
 
-        img{
-            width: 100%;
-            height: auto;
+        #get-connected{
+            margin-bottom: -5px;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #twitter-block{
+            display: none;
+        }
+
+        #insta-block{
+            display: none;
         }
     }
+}
 
-    #insta-block{
-        width: 25%;
-        float: left;
-        overflow: hidden;
-        margin: 0;
-        position: relative;
+@media screen and (min-device-width: 1024px){
+    .social{
+        #get-connected{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
 
-        img{
-            width: 100%;
-            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
-    }
 
-    #twitter-block{
-        width: 25%;
-        float: left;
-        overflow: hidden;
-        margin: 0;
-        position: relative;
+        #insta-block{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
 
-        img{
-            width: 100%;
-            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #twitter-block{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }

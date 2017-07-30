@@ -8,170 +8,316 @@ $susy: (
     output: float
 );
 
-.tabs{
-    width: span(10 at 6);
-    float: right;
-    background: $racc-white;
-    position: relative;
-    z-index: 20;
-    top: -392px;
-    
-    #row1{
-        background: $racc-grey1;
-        height: 195px;
-        width: span(5);
-        margin-bottom: 0px;
-        float: none;
-        display: flex;
-
-        #i-want-to{
-            font-family: $racc-font;
-            font-weight: 100;
-            color: $racc-white;
-            margin: auto auto;
-            text-align: center;
-            padding: 40px;
-            font-size: 2.18rem;
-            line-height: 2.5rem;
-        }
-    }
-    
-    #row2{
-        background: $racc-grey2;
-        height: 195px;
-        width: span(5);
-        margin-bottom: 0px;
-        float: none;
-        display: flex;
-
-        #apply-now{
-            font-family: $racc-font;
-            font-weight: 100;
-            color: $racc-white;
-            margin: auto auto;
-            text-align: center;
-            padding: 40px;
-            font-size: 2.18rem;
-            line-height: 2.5rem;
-        }
-    }
-
-    #row3{
-        background: $racc-grey3;
-        height: 195px;
-        width: span(5);
-        margin-bottom: 0px;
-        float: none;
-        display: flex;
-
-        #how-to{
-            font-family: $racc-font;
-            font-weight: 100;
-            color: $racc-white;
-            margin: auto auto;
-            text-align: center;
-            padding: 40px;
-            font-size: 2.18rem;
-            line-height: 2.5rem;
-        }
-    }
-
-    #row4{
-        background: $racc-grey4;
-        height: 195px;
-        width: span(5);
-        margin-bottom: 0px;
-        float: none;
-        display: flex;
-
-        #student-life{
-            font-family: $racc-font;
-            font-weight: 100;
-            color: $racc-white;
-            margin: auto auto;
-            text-align: center;
-            padding: 40px;
-            font-size: 2.18rem;
-            line-height: 2.5rem;
-        }
-    }
-
-    #right-tabs{
-        display: inline-block;
-        width: 67.5%;
+@media screen and (min-device-width: 1024px){
+    .tabs{
+        width: span(10 at 6);
         float: right;
         background: $racc-white;
-        min-height: 760px;
+        position: relative;
+        z-index: 20;
+        top: -105vh;
+        
+        #row1{
+            background: $racc-grey1;
+            height: 195px;
+            width: span(5);
+            margin-bottom: 0px;
+            float: none;
+            display: flex;
 
-        #tabs-img{
-            height: 413px;
-            position: relative;
-            overflow: hidden;
+            #i-want-to{
+                font-family: $racc-font;
+                font-weight: 100;
+                color: $racc-white;
+                margin: auto auto;
+                text-align: center;
+                padding: 40px;
+                font-size: 2.18rem;
+                line-height: 2.5rem;
+            }
+        }
+        
+        #row2{
+            background: $racc-grey2;
+            height: 195px;
+            width: span(5);
+            margin-bottom: 0px;
+            float: none;
+            display: flex;
 
-            img{
-                width: 100%;
-                height: auto;
-                border: 0;
+            #apply-now{
+                font-family: $racc-font;
+                font-weight: 100;
+                color: $racc-white;
+                margin: auto auto;
+                text-align: center;
+                padding: 40px;
+                font-size: 2.18rem;
+                line-height: 2.5rem;
             }
         }
 
-        #bottom-right{
+        #row3{
+            background: $racc-grey3;
+            height: 195px;
+            width: span(5);
+            margin-bottom: 0px;
+            float: none;
+            display: flex;
+
+            #how-to{
+                font-family: $racc-font;
+                font-weight: 100;
+                color: $racc-white;
+                margin: auto auto;
+                text-align: center;
+                padding: 40px;
+                font-size: 2.18rem;
+                line-height: 2.5rem;
+            }
+        }
+
+        #row4{
+            background: $racc-grey4;
+            height: 195px;
+            width: span(5);
+            margin-bottom: 0px;
+            float: none;
+            display: flex;
+
+            #student-life{
+                font-family: $racc-font;
+                font-weight: 100;
+                color: $racc-white;
+                margin: auto auto;
+                text-align: center;
+                padding: 40px;
+                font-size: 2.18rem;
+                line-height: 2.5rem;
+            }
+        }
+
+        #right-tabs{
             display: inline-block;
-            padding: 40px 35px;
-            padding-bottom: 0px;
+            width: 67.5%;
+            float: right;
+            background: $racc-white;
+            min-height: 760px;
 
-            #left-column{
-                width: span(9);
-                float: left;
-                margin-right: 0.8333333%;
-                margin-left: 0.8333333%;
-                padding-right: 20px;
+            #tabs-img{
+                height: 413px;
+                position: relative;
+                overflow: hidden;
 
-                #left-title{
-                    font-size:  2.1875rem;
-                    line-height: 2.5rem;
-                    font-family: $racc-font;
-                    font-weight: 500;
-                    color: $racc-title;
+                img{
+                    width: 100%;
+                    height: auto;
+                    border: 0;
+                }
+            }
+
+            #tabs-img2{
+                display: none;
+                height: 413px;
+                position: relative;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    border: 0;
+                }
+            }
+
+            #tabs-img3{
+                display: none;
+                height: 413px;
+                position: relative;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    border: 0;
+                }
+            }
+
+            #tabs-img4{
+                display: none;
+                height: 413px;
+                position: relative;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    border: 0;
+                }
+            }
+
+            #bottom-right{
+                display: inline-block;
+                padding: 40px 35px;
+                padding-bottom: 0px;
+            }
+
+            #bottom-right2{
+                display: none;
+                padding: 40px 35px;
+                padding-bottom: 0px;
+            }
+
+            #bottom-right3{
+                display: none;
+                padding: 40px 35px;
+                padding-bottom: 0px;
+            }
+
+            #bottom-right4{
+                display: none;
+                padding: 40px 35px;
+                padding-bottom: 0px;
+            }
+
+            div{
+                #left-column{
+                    width: span(9);
+                    float: left;
+                    margin-right: 0.8333333%;
+                    margin-left: 0.8333333%;
+                    padding-right: 20px;
+
+                    #left-title{
+                        font-size:  2.1875rem;
+                        line-height: 2.5rem;
+                        font-family: $racc-font;
+                        font-weight: 500;
+                        color: $racc-title;
+                    }
+
+                    #left-column-content{
+                        columns: 2;
+                        list-style: none;
+                        padding-left: 0;
+                        margin-top: 2rem;
+
+                        li{
+                            font-size: 1rem;
+                            line-height: 2rem;
+                            color: $racc-red-font;
+                            font-family: $racc-font;
+                            font-weight: 600;
+                        }
+                    }
                 }
 
-                #left-column-content{
-                    columns: 2;
-                    list-style: none;
-                    padding-left: 0;
-                    margin-top: 2rem;
+                #right-column{
+                    margin-right: 0.8333333%;
+                    margin-left: 0.8333333%;
 
-                    li{
-                        font-size: 1rem;
-                        line-height: 2rem;
-                        color: $racc-red-font;
+                    #right-title{
+                        font-size:  2.1875rem;
+                        line-height: 2.5rem;
                         font-family: $racc-font;
-                        font-weight: 600;
+                        font-weight: 500;
+                        color: $racc-title;
+                    }
+
+                    #right-text{
+                        font-weight: 500;
+                        margin-top: 2rem;
+                        font-family: $racc-font;
+                        color: black;
+                        padding-left: 0;
+                        font-size: 1.2rem;
+                        line-height: 1.5rem;
                     }
                 }
             }
+        }
+    }
+}
 
-            #right-column{
-                margin-right: 0.8333333%;
-                margin-left: 0.8333333%;
+@media screen and (max-device-width: 480px){
+    .tabs{
+        width: 100%;
+        top: 0;
+        margin-bottom: 35px;
+        margin-top: -89px;
 
-                #right-title{
-                    font-size:  2.1875rem;
-                    line-height: 2.5rem;
-                    font-family: $racc-font;
-                    font-weight: 500;
-                    color: $racc-title;
-                }
+        #right-tabs{
+            display: none;
+        }
 
-                #right-text{
-                    font-weight: 500;
-                    margin-top: 2rem;
-                    font-family: $racc-font;
-                    color: black;
-                    padding-left: 0;
-                    font-size: 1.2rem;
-                    line-height: 1.5rem;
-                }
+        #row1{
+            width: 100%;
+            height: 90px;
+            background: $racc-red;
+            font-family: $racc-font;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 0px;
+            display: flex;
+
+            p{
+                padding: 0;
+                margin: auto auto;
+                text-align: center;
+                font-size: 1.6rem;
+            }
+        }
+
+        #row2{
+            width: 100%;
+            height: 90px;
+            background: $racc-grey5;
+            font-family: $racc-font;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 0px;
+            display: flex;
+
+            p{
+                padding: 0;
+                margin: auto auto;
+                text-align: center;
+                font-size: 1.6rem;
+            }
+        }
+
+        #row3{
+            width: 100%;
+            height: 90px;
+            background: $racc-grey1;
+            font-family: $racc-font;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 0px;
+            display: flex;
+
+            p{
+                padding: 0;
+                margin: auto auto;
+                text-align: center;
+                font-size: 1.6rem;
+            }
+        }
+
+        #row4{
+            width: 100%;
+            height: 90px;
+            background: $racc-grey5;
+            font-family: $racc-font;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 0px;
+            display: flex;
+
+            p{
+                padding: 0;
+                margin: auto auto;
+                text-align: center;
+                font-size: 1.6rem;
             }
         }
     }

@@ -1,0 +1,43 @@
+@import "variables";
+@import "../node_modules/susy/sass/susy";
+
+$susy: (
+    columns: susy-repeat(14),
+    gutter: 0,
+    math: fluid,
+    output: float
+);
+
+@media screen and (min-device-width: 1024px){
+    .enroll{
+        display: none;
+    }
+}
+
+@media screen and (max-device-width: 480px){
+
+    .enroll{
+        display: inline-block;
+        padding: 34px 0;
+        background: $racc-red;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        bottom: 90px;
+        z-index: 20;
+        margin-top: 340px;
+
+        span{
+            background: white;
+            font-size: 16px;
+            letter-spacing: 1px;
+            padding: 10px 55px;
+            color: $racc-light-black;
+            text-align: center;
+            font-family: $racc-font;
+            font-weight: 400;
+            line-height: 1.25rem;
+            font-size: 16px;
+        }
+    }
+}
