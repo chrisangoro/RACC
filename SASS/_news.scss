@@ -1,0 +1,152 @@
+@import "variables";
+@import "../node_modules/susy/sass/susy";
+
+$susy: (
+    columns: susy-repeat(16),
+    gutter: 0,
+    math: fluid,
+    output: float
+);
+
+.news{
+    width: 98.33333%;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+    margin-top: 110em;
+    margin-bottom: 0;
+    padding: 0 20px;
+
+    #news-div-title{
+        margin-top: 20px;
+        position: relative;
+
+        h2{
+            font-family: $racc-font;
+            margin: 29px 0 32px 11px;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+            color: $racc-title;
+            font-weight: 400;
+        }
+
+        p{
+            margin-top: 20px;
+            font-family: $racc-font;
+            margin-right: 22px;
+            right: 0;
+            text-align: right;
+            top: 8px;
+            position: absolute;
+            float: right;
+            width: 80px;
+            font-size: 16px;
+            color: $racc-title;
+            font-weight: 400;
+        }
+    }
+
+    #news-content{
+        float: left;
+        margin-top: -230px;
+        
+        #spotlight{
+            width: 50%;
+            float: left;
+
+            #spotlight-container{
+                height: 100%;
+                width: 96.666666%;
+                margin-left: 0.83333%;
+                margin-right: 0.83333%;
+                background: $racc-grey1;
+
+                #spotlight-image{
+                    width: 50%;
+                    position: relative;
+                    overflow: hidden;
+                    float: left;
+
+                    img{
+                        display: block;
+                        height: auto;
+                        width: 100%;
+                        border: 0;
+                    }
+                }
+
+                #spotlight-text{
+                    position: relative;
+                    width: 50%;
+                    //height: 100%;
+                    font-family: $racc-font;
+                    padding: 0.5em 30px;
+                    margin-left: auto;
+
+                    #sp-title{
+                        color: $racc-white;
+                        line-height: 30px;
+                        text-transform: uppercase;
+                        font-size: 1.375rem;
+                        font-weight: 400;
+                        margin-bottom: 4rem;
+                        margin-left: 3em;
+                        margin-right: 1em;
+                    }
+
+                    #sp-subtitle{
+                        color: $racc-white;
+                        font-weight: 200;
+                        margin-left: 1.8em;
+                        margin-right: 1em;
+                        margin-top: 25px;
+                        margin-bottom: 1.5rem;
+                        font-size: 2.1875rem;
+                        line-height: 2.5rem;
+                    }
+
+                    #sp-body{
+                        color: $racc-white;
+                        font-size: 0.875rem;
+                        line-height: 2;
+                        font-weight: 400;
+                        letter-spacing: 0.6px;
+                        margin-left: 4.8em;
+                        margin-right: 1em;
+                    }
+                }
+            }
+        }
+
+        #other-news{
+            width: 50%;
+            float: left;
+            position: relative;
+
+            #news1{
+                width: 48.3333%;
+                float: left;
+                margin-left: 0.8333%;
+                margin-right: 0.8333%;
+                position: relative;
+
+                img{
+                    min-width: 100%;
+                    height: auto;
+                }
+            }
+
+            #news2{
+                width: 48.3333%;
+                float: left;
+                margin-left: 0.8333%;
+                margin-right: 0.8333%;
+                position: relative;
+
+                img{
+                    min-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

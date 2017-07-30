@@ -1,0 +1,94 @@
+@import "../node_modules/susy/sass/susy";
+@import "variables";
+
+$susy: (
+    columns: susy-repeat(15),
+    gutter: 0,
+    math: fluid,
+    output: float
+);
+
+.more-info{
+    #background-img{
+        float: right;
+        height: 735px;
+        overflow: hidden;
+
+        img{
+            max-width: 100%;
+            height: auto;
+            border: 0;
+        }
+    }
+
+    #info-container{
+        position: relative;
+        bottom: 275px;
+
+        #info-content{
+            width: 87%;
+            float: left;
+            background: $racc-red;
+
+            #right-info{
+                width: 68.3%;
+                float: right;
+                padding-top: 0;
+                background: white;
+
+                #video{
+                    max-height: 520px;
+                    position: relative;
+
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                        border: 0;
+                    }
+                }
+
+                #right-info-title{
+                    margin-top: 50px;
+                    margin-bottom: 15px;
+                    font-family: $racc-font;
+                    font-weight: 100;
+                    padding-left: 50px;
+                    font-size: 2.5rem;
+                    line-height: 2.8rem;
+                    color: $font-black;
+                }
+
+                #right-info-text{
+                    padding-left: 50px;
+                    color: black;
+                    font-size: 18px;
+                    font-family: $racc-font;
+                    line-height: 30px;
+                    font-weight: 400;
+                }
+            }
+
+            #left-info{
+                width: 31.6%;
+                color: white;
+                padding: 85px 45px;
+                padding-right: 45px;
+                font-family: $racc-font;
+
+                h2{
+                    font-weight: 100;
+                    font-size: 2.5rem;
+                    line-height: 2.8rem;
+                    margin-bottom: 1.25rem;
+                }
+
+                p{
+                    font-size: 18px;
+                    font-family: $racc-font;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

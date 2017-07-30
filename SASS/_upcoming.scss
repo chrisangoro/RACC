@@ -1,0 +1,133 @@
+@import "variables";
+@import "../node_modules/susy/sass/susy";
+
+$susy: (
+    columns: susy-repeat(18),
+    gutter: 0.83333%,
+    math: fluid,
+    output: float
+);
+
+.upcoming{
+    width: 98.33333%;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+    margin-top: 450px;
+    margin-bottom: 0;
+    padding: 0 20px;
+
+    #upcoming-div-title{
+        margin-top: 20px;
+        position: relative;
+
+        h2{
+            font-family: $racc-font;
+            margin: 29px 0 32px 11px;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+            color: $racc-title;
+            font-weight: 400;
+        }
+
+        p{
+            margin-top: 20px;
+            font-family: $racc-font;
+            margin-right: 22px;
+            right: 0;
+            text-align: right;
+            top: 8px;
+            position: absolute;
+            float: right;
+            width: 80px;
+            font-size: 16px;
+            color: $racc-title;
+            font-weight: 400;
+        }
+    }
+
+    #upcoming-content{
+        width: 98.3%;
+        float: left;
+        margin-left: 0.83%;
+        margin-right: 0.83%;
+        padding: 0.5em;
+
+        #upcoming-unit{
+            width: 30%;
+            float: left;
+            margin-left: 0.83%;
+            margin-right: -100%;
+            clear: both;
+            margin-bottom: 33px;
+            display: block;
+        }
+
+        #upcoming-unit2{
+            width: 30%;
+            margin-left: 34.15%;
+            margin-right: -100%;
+            clear: none;
+            margin-bottom: 33px;
+            float: left
+        }
+
+        #upcoming-unit3{
+            width: 30%;
+            margin-left: 67.5%;
+            margin-right: -100%;
+            clear: none;
+            margin-bottom: 33px;
+            float: left
+        }
+
+        div{
+            #up-date{
+                width: 109px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 22px;
+                text-align: center;
+
+                #month{
+                    font-family: $racc-font;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    height: 33px;
+                    background: $racc-red;
+                    color: white;
+                    line-height: 1.3;
+                    width: 90px;
+                    display: block;
+                }
+
+                #day{
+                    font-family: sans-serif;
+                    font-weight: 700;
+                    font-size: 2.8rem;
+                    height: 59px;
+                    background: white;
+                    color: $racc-light-black;
+                    line-height: 1.3;
+                    display: block;
+                    width: 90px;
+                }
+            }
+
+            #up-text{
+                width: 66%;
+                display: inline-block;
+                vertical-align: middle;
+
+                p{
+                    font-family: $racc-font;
+                    font-weight: 400;
+                    width: 100%;
+                    margin-bottom: 0;
+                    color: $racc-light-black;
+                    line-height: 1.4;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
