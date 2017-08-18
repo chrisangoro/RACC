@@ -54,8 +54,19 @@
         list-style-type: none;
         height: 100%;
         margin: 0;
-        margin-left: 2em;
         padding: 0; }
+        header nav ul #myracc {
+          padding: 0.9em 2.7em; }
+        header nav ul #miller {
+          padding: 0.9em 1.1em; }
+          header nav ul #miller a {
+            letter-spacing: 0.185em; }
+        header nav ul #row3 {
+          padding: 0.9em 3.1em; }
+        header nav ul #row4 {
+          padding: 0.9em 0.2em; }
+        header nav ul #row5 {
+          padding: 0.9em 4.14em; }
         header nav ul li {
           padding: 0.9em 2.1em;
           margin: 0px;
@@ -63,12 +74,12 @@
           header nav ul li a {
             font-family: "Raleway", sans-serif;
             color: #fff;
-            font-size: 0.7em;
+            font-size: 0.75em;
             font-weight: 500;
-            letter-spacing: 1px; }
+            letter-spacing: 0.2em; }
           header nav ul li i {
             color: #fff;
-            margin-left: -3em; }
+            margin-left: -4.4em; }
   #logo {
     width: 27.4;
     height: 105px;
@@ -77,8 +88,9 @@
     float: left; }
     #logo #logo-image img {
       display: block;
-      max-width: 100%;
-      margin: 7px auto; }
+      height: 85px;
+      width: auto;
+      margin: 9px 50px; }
   #mainMenu {
     width: 56.52174%;
     display: inline-block;
@@ -180,21 +192,23 @@
 @media screen and (min-device-width: 1024px) {
   main {
     width: 100%; }
+  .slider-container {
+    width: 100%; }
   #slider-inside-text {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 34.5em;
+    margin-top: 29.9em;
     margin-left: 11%;
     z-index: 20; }
     #slider-inside-text .slide-title {
       text-decoration: none;
-      font-size: 3em;
+      font-size: 45px;
       font-weight: 100;
       text-transform: uppercase;
       width: 10em;
-      letter-spacing: 1.5px;
-      line-height: 1.2em;
+      letter-spacing: -0.5px;
+      line-height: 48px;
       z-index: 20;
       margin-bottom: 25px;
       font-family: "Raleway", sans-serif;
@@ -206,9 +220,40 @@
       font-family: "Raleway", sans-serif;
       width: 25em;
       font-size: 15px;
-      line-height: 1.8;
+      line-height: 23px;
       font-weight: 400;
-      z-index: 20; } }
+      z-index: 20;
+      margin-left: -3px;
+      margin-top: 29px; }
+  .flex-control-nav {
+    text-align: initial;
+    margin-left: 10.4em; }
+  .flex-control-paging {
+    top: 680px;
+    margin-left: 10.4em;
+    z-index: 10; }
+    .flex-control-paging li a {
+      content: url(../res/img/NotActiveSlide.png);
+      height: 2px;
+      width: 52px;
+      margin-left: 6px; }
+    .flex-control-paging li .flex-active {
+      content: url(../res/img/ActiveSlide.png);
+      height: 2px;
+      width: 52px; }
+  .flex-direction-nav a {
+    width: 60px;
+    height: 60px; }
+  .flex-direction-nav .flex-nav-prev a {
+    margin-top: -120px; }
+  .flex-direction-nav .flex-nav-prev a::before {
+    content: url(../res/img/sliderback.png);
+    padding-left: 10px; }
+  .flex-direction-nav .flex-nav-next a {
+    margin-top: -120px; }
+  .flex-direction-nav .flex-nav-next a::before {
+    content: url(../res/img/sliderforward.png);
+    padding-right: 10px; } }
 
 @media screen and (max-device-width: 480px) {
   #slider-inside-text {
@@ -230,7 +275,7 @@
 
 @media screen and (min-device-width: 1024px) {
   .slider {
-    margin-top: -111px;
+    margin-top: -122px;
     position: relative;
     top: 0;
     left: 0;

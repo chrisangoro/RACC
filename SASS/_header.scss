@@ -29,8 +29,31 @@ $susy: (
                 list-style-type: none;
                 height: 100%;
                 margin: 0;
-                margin-left: 2em;
                 padding: 0;
+
+                #myracc{
+                    padding: 0.9em 2.7em;
+                }
+
+                #miller{
+                    padding: 0.9em 1.1em;
+
+                    a{
+                        letter-spacing: 0.185em;
+                    }
+                }
+
+                #row3{
+                    padding: 0.9em 3.1em;
+                }
+
+                #row4{
+                    padding: 0.9em 0.2em;
+                }
+
+                #row5{
+                    padding: 0.9em 4.14em;
+                }
 
                 li{
                     padding: 0.9em 2.1em;
@@ -40,14 +63,14 @@ $susy: (
                     a{
                         font-family: $racc-font;
                         color: $racc-white;
-                        font-size: 0.7em;
+                        font-size: 0.75em;
                         font-weight: 500;
-                        letter-spacing: 1px;
+                        letter-spacing: 0.2em;
                     }
 
                     i{
                         color: $racc-white;
-                        margin-left: -3em;
+                        margin-left: -4.4em;
                     }
                 }
             }
@@ -63,8 +86,9 @@ $susy: (
         #logo-image{
             img{
                 display: block;
-                max-width: 100%;
-                margin: 7px auto;
+                height: 85px;
+                width: auto;
+                margin: 9px 50px;
             }
         }
     }
