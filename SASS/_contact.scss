@@ -12,6 +12,102 @@ $susy: (
     .enroll{
         display: none;
     }
+
+    .contact{
+        width: 87%;
+        float: right;
+        background: $racc-grey1;
+        padding: 50px 50px 75px;
+
+        form{
+            display: block;
+            margin-top: 0em;
+
+            p{
+                color: white;
+                font-family: $racc-font;
+                font-weight: 400;
+                margin-bottom: 30px;
+                letter-spacing: 0;
+                font-size: 2.15rem;
+                line-height: 2.5rem;
+            }
+
+            #form_name{
+                width: 15%;
+                float: left;
+                margin: 0;
+                font-size: 11px;
+                margin-right: 8px;
+                color: $racc-grey2;
+                height: 60px;
+                padding: 1.5em;
+                border-radius: 2px;
+                box-shadow: none;
+                font-family: $racc-font;
+                font-weight: 400;
+            }
+
+            #form_phone{
+                width: 15%;
+                float: left;
+                margin: 0;
+                font-size: 11px;
+                margin-right: 8px;
+                color: $racc-grey2;
+                height: 60px;
+                padding: 1.5em;
+                border-radius: 2px;
+                box-shadow: none;
+                font-family: $racc-font;
+                font-weight: 400;
+            }
+
+            #form_email{
+                width: 23%;
+                float: left;
+                margin: 0;
+                font-size: 11px;
+                margin-right: 0.8%;
+                color: $racc-grey2;
+                height: 60px;
+                padding: 1.5em;
+                border-radius: 2px;
+                box-shadow: none;
+                font-family: $racc-font;
+                font-weight: 400;
+            }
+
+            #submit{
+                width: 11.5%;
+                float: left;
+                margin-right: 0.8%;
+                font-size: 15px;
+                color: white;
+                background: $racc-grey1;
+                border: 3px solid white;
+                height: 60px;
+                box-shadow: none;
+                border-radius: 2px;
+                font-family: $racc-font;
+                font-weight: 400;
+                text-decoration: none;
+            }
+
+            div{
+                p{
+                    font-family: $racc-font;
+                    font-weight: 400;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    margin-bottom: 0;
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                    color: white;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-device-width: 480px){

@@ -46,8 +46,8 @@
     header #block-main-menu-mobile {
       display: none; }
     header nav {
-      width: 71.01449%;
-      height: 45px;
+      width: 72.6%;
+      height: 46px;
       float: right; }
       header nav ul {
         display: inline-block;
@@ -70,7 +70,7 @@
             color: #fff;
             margin-left: -3em; }
   #logo {
-    width: 27.53623%;
+    width: 27.4;
     height: 105px;
     display: inline-block;
     position: relative;
@@ -706,7 +706,7 @@
     width: 98.33333%;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
-    margin-top: 0px;
+    margin-top: -165px;
     margin-bottom: 800px;
     padding: 0 20px;
     float: left; }
@@ -1445,7 +1445,85 @@
 
 @media screen and (min-device-width: 1024px) {
   .enroll {
-    display: none; } }
+    display: none; }
+  .contact {
+    width: 87%;
+    float: right;
+    background: #87888e;
+    padding: 50px 50px 75px; }
+    .contact form {
+      display: block;
+      margin-top: 0em; }
+      .contact form p {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        margin-bottom: 30px;
+        letter-spacing: 0;
+        font-size: 2.15rem;
+        line-height: 2.5rem; }
+      .contact form #form_name {
+        width: 15%;
+        float: left;
+        margin: 0;
+        font-size: 11px;
+        margin-right: 8px;
+        color: #999ba1;
+        height: 60px;
+        padding: 1.5em;
+        border-radius: 2px;
+        box-shadow: none;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400; }
+      .contact form #form_phone {
+        width: 15%;
+        float: left;
+        margin: 0;
+        font-size: 11px;
+        margin-right: 8px;
+        color: #999ba1;
+        height: 60px;
+        padding: 1.5em;
+        border-radius: 2px;
+        box-shadow: none;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400; }
+      .contact form #form_email {
+        width: 23%;
+        float: left;
+        margin: 0;
+        font-size: 11px;
+        margin-right: 0.8%;
+        color: #999ba1;
+        height: 60px;
+        padding: 1.5em;
+        border-radius: 2px;
+        box-shadow: none;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400; }
+      .contact form #submit {
+        width: 11.5%;
+        float: left;
+        margin-right: 0.8%;
+        font-size: 15px;
+        color: white;
+        background: #87888e;
+        border: 3px solid white;
+        height: 60px;
+        box-shadow: none;
+        border-radius: 2px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        text-decoration: none; }
+      .contact form div p {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 0;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: white; } }
 
 @media screen and (max-device-width: 480px) {
   .enroll {
@@ -1473,4 +1551,5 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
