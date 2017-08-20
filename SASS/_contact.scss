@@ -14,8 +14,10 @@ $susy: (
     }
 
     .contact{
-        width: 87%;
+        margin-top: -5px;
+        width: 80.6%;
         float: right;
+        height: 126px;
         background: $racc-grey1;
         padding: 50px 50px 75px;
 
@@ -31,64 +33,82 @@ $susy: (
                 letter-spacing: 0;
                 font-size: 2.15rem;
                 line-height: 2.5rem;
+                margin-top: -0.12em;
             }
 
             #form_name{
-                width: 15%;
+                width: 13.2%;
                 float: left;
+                padding-left: 23px;
+                padding-top: 2px;
+                letter-spacing: 1px;
                 margin: 0;
+                margin-left: -7px;
+                margin-top: -2px;
                 font-size: 11px;
                 margin-right: 8px;
                 color: $racc-grey2;
-                height: 60px;
-                padding: 1.5em;
-                border-radius: 2px;
+                height: 55px;
+                //padding: 1.5em;
+                border-radius: 0;
                 box-shadow: none;
                 font-family: $racc-font;
                 font-weight: 400;
+
+                ::placeholder{
+                    margin-left: 10px;
+                }
             }
 
             #form_phone{
-                width: 15%;
+                width: 12.78%;
                 float: left;
-                margin: 0;
+                margin-left: -3px;
+                margin-top: -3px;
                 font-size: 11px;
                 margin-right: 8px;
                 color: $racc-grey2;
-                height: 60px;
-                padding: 1.5em;
-                border-radius: 2px;
+                height: 55px;
+                padding-left: 27px;
+                padding-top: 2px;
+                letter-spacing: 1.2px;
                 box-shadow: none;
                 font-family: $racc-font;
                 font-weight: 400;
             }
 
             #form_email{
-                width: 23%;
+                width: 20.7%;
                 float: left;
                 margin: 0;
                 font-size: 11px;
                 margin-right: 0.8%;
                 color: $racc-grey2;
-                height: 60px;
-                padding: 1.5em;
-                border-radius: 2px;
+                height: 57px;
+                margin-top: -3px;
+                padding-left: 25px;
+                letter-spacing: 1.23px;
                 box-shadow: none;
                 font-family: $racc-font;
                 font-weight: 400;
+
+                ::placeholder{
+                    margin-left: 10px;
+                }
             }
 
             #submit{
-                width: 11.5%;
+                width: 12%;
                 float: left;
                 margin-right: 0.8%;
                 font-size: 15px;
                 color: white;
                 background: $racc-grey1;
-                border: 3px solid white;
+                border: 2px solid white;
                 height: 60px;
+                margin-top: -2px;
                 box-shadow: none;
-                border-radius: 2px;
+                border-radius: 0px;
                 font-family: $racc-font;
                 font-weight: 400;
                 text-decoration: none;
@@ -101,9 +121,14 @@ $susy: (
                     margin-top: 10px;
                     margin-left: 20px;
                     margin-bottom: 0;
-                    font-size: 1.8rem;
+                    font-size: 1.9rem;
                     line-height: 2.5rem;
                     color: white;
+
+                    strong{
+                        font-size: 2.3rem;
+                        padding-left: 0.25em;
+                    }
                 }
             }
         }

@@ -129,7 +129,7 @@ $susy: (
         width: 98.33333%;
         margin-left: 0.83333%;
         margin-right: 0.83333%;
-        margin-top: -165px;
+        margin-top: -115px;
         margin-bottom: 800px;
         padding: 0 20px;
         float: left;
@@ -140,24 +140,24 @@ $susy: (
 
             h2{
                 font-family: $racc-font;
-                margin: 29px 0 32px 11px;
-                font-size: 2.5rem;
-                line-height: 2.5rem;
+                margin: 30px 0 22px 5px;
+                font-size: 35px;
+                line-height: 39px;
                 color: $racc-title;
                 font-weight: 400;
             }
 
             p{
                 font-family: $racc-font;
-                margin-right: 22px;
+                margin-right: 81px;
                 right: 0;
                 text-align: right;
-                top: 8px;
+                top: -7px;
                 position: absolute;
                 float: right;
                 width: 80px;
-                font-size: 16px;
-                color: $racc-title;
+                font-size: 16.44px;
+                color: black;
                 font-weight: 400;
             }
         }
@@ -167,7 +167,8 @@ $susy: (
             margin-top: -230px;
             
             #spotlight{
-                width: 50%;
+                width: 49.43%;
+                height: 349px;
                 float: left;
 
                 #spotlight-container{
@@ -178,7 +179,7 @@ $susy: (
                     background: $racc-grey1;
 
                     #spotlight-image{
-                        width: 50%;
+                        width: 49.3%;
                         position: relative;
                         overflow: hidden;
                         float: left;
@@ -200,20 +201,21 @@ $susy: (
                         width: 50%;
                         //height: 100%;
                         font-family: $racc-font;
-                        padding: 0.5em 30px;
+                        padding: 25px 46px;
                         margin-left: auto;
 
                         #sp-title{
-                            margin-bottom: 4rem;
-                            margin-left: 3em;
-                            margin-right: 1em;
+                            margin-bottom: 40px;
+                            margin-left: 48px;
+                            //margin-right: 1em;
                             a{
                                 padding-top: 0.3em;
                                 padding-left: 0.8em;
                                 color: $racc-white;
-                                line-height: 30px;
+                                line-height: 24px;
                                 text-transform: uppercase;
-                                font-size: 1.375rem;
+                                font-size: 24px;
+                                letter-spacing: -0.6px;
                                 font-weight: 400;
                                 text-decoration: none;
                             }
@@ -224,10 +226,10 @@ $susy: (
                         }
 
                         #sp-subtitle{
-                            margin-left: 4em;
-                            margin-right: 1em;
-                            margin-top: 25px;
-                            margin-bottom: 1.5rem;
+                            margin-left: 66px;
+                            //margin-right: 1em;
+                            margin-top: 55px;
+                            //margin-bottom: 1.5rem;
 
                             a{
                                 color: $racc-white;
@@ -246,12 +248,13 @@ $susy: (
 
                         #sp-body{
                             color: $racc-white;
-                            font-size: 0.875rem;
-                            line-height: 2;
-                            font-weight: 400;
-                            letter-spacing: 0.6px;
-                            margin-left: 4.8em;
-                            margin-right: 1em;
+                            font-size: 15px;
+                            line-height: 26.67px;
+                            font-weight: 300;
+                            letter-spacing: 0.5px;
+                            margin-top: 18px;
+                            margin-left: 69px;
+                            margin-right: -10px;
                         }
                     }
                 }
@@ -260,18 +263,30 @@ $susy: (
             #other-news{
                 width: 50%;
                 float: left;
+                margin-left: 0px;
                 position: relative;
 
                 #news1{
-                    width: 48.3333%;
+                    width: 47.3333%;
                     float: left;
-                    margin-left: 0.8333%;
+                    margin-left: -0.1667%;
                     margin-right: 0.8333%;
                     position: relative;
 
                     img{
-                        min-width: 100%;
+                        width: 360px;
                         height: auto;
+                    }
+
+                    p{
+                        color: white;
+                        font-size: 22px;
+                        line-height: 28px;
+                        font-family: $racc-font;
+                        margin-top: -75px;
+                        padding-left: 20px;
+                        font-weight: 600;
+                        letter-spacing: 0.1px;
                     }
 
                     img:hover{
@@ -287,8 +302,20 @@ $susy: (
                     position: relative;
 
                     img{
-                        min-width: 100%;
+                        width: 360px;
                         height: auto;
+                    }
+
+                    p{
+                        color: white;
+                        font-size: 22px;
+                        line-height: 28px;
+                        font-family: $racc-font;
+                        margin-top: -75px;
+                        padding-left: 20px;
+                        font-weight: 600;
+                        letter-spacing: 0.1px;
+                        margin-right: 70px;
                     }
 
                     img:hover{

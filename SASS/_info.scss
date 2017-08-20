@@ -30,72 +30,127 @@ $susy: (
 
         #info-container{
             position: relative;
-            bottom: 275px;
+            bottom: 280px;
 
             #info-content{
                 width: 87%;
+                height: 852px;
                 float: left;
                 background: $racc-red;
 
                 #right-info{
-                    width: 68.3%;
+                    width: 68.33%;
                     float: right;
                     padding-top: 0;
                     background: white;
 
                     #video{
-                        max-height: 520px;
+                        //max-height: 32.8em;
                         position: relative;
 
                         img{
-                            max-width: 100%;
-                            height: auto;
+                            width: auto;
+                            height: 33.099em;
                             border: 0;
                         }
                     }
 
                     #right-info-title{
-                        margin-top: 50px;
+                        margin-top: 40px;
                         margin-bottom: 15px;
                         font-family: $racc-font;
-                        font-weight: 100;
+                        font-weight: 400;
                         padding-left: 50px;
-                        font-size: 2.5rem;
+                        font-size: 2.1rem;
+                        letter-spacing: 0.5px;
                         line-height: 2.8rem;
                         color: $font-black;
                     }
 
                     #right-info-text{
-                        padding-left: 50px;
+                        padding-left: 53px;
+                        height: 222px;
+                        margin-top: -6px;
                         color: black;
                         font-size: 18px;
                         font-family: $racc-font;
                         line-height: 30px;
-                        font-weight: 400;
+                        font-weight: 500;
+                        letter-spacing: -0.06697px;
                     }
                 }
 
                 #left-info{
                     width: 31.6%;
                     color: white;
-                    padding: 85px 45px;
+                    padding: 85px 40px;
                     padding-right: 45px;
                     font-family: $racc-font;
 
                     h2{
-                        font-weight: 100;
-                        font-size: 2.5rem;
+                        font-weight: 200;
+                        font-size: 2.2rem;
+                        letter-spacing: -0.5px;
                         line-height: 2.8rem;
-                        margin-bottom: 1.25rem;
+                        margin-bottom: 1.4rem;
                     }
 
                     p{
+                        width: 82%;
+                        padding-left: 3px;
                         font-size: 18px;
                         font-family: $racc-font;
-                        font-weight: 400;
+                        font-weight: 1.1rem;
                         line-height: 30px;
+                        font-weight: 500;
                     }
                 }
+            }
+        }
+    }
+
+    .brands{
+        width: 100%;
+        margin-top: -290px;
+        float: left;
+        height: 326px;
+        background: $racc-grey4;
+        ul{
+            padding: 4.5em 19.8em;
+
+            li{
+                width: 31.66%;
+                float: left;
+                margin-left: 0.83%;
+                margin-right: 0.83%;
+                list-style: none;
+
+                img{
+                    height: 155px;
+                    width: auto;
+                }
+            }
+        }
+        
+
+        #miller{
+            margin-left: initial;
+        }
+
+        #schmidt{
+            margin-left: 4em;
+
+            img{
+                height: 138px;
+            }
+        }
+
+        #foundation{
+            margin-left: 9.46em;
+            width: 10%;
+
+            img{
+                height: 134px;
             }
         }
     }
