@@ -182,7 +182,7 @@ $susy: (
             height: 100%;
             padding-left: 0;
             background: rgba(255, 255, 255, 0.5);
-            font-size: 30px;
+            font-size: 26px;
 
                 #menu-mobile-container{
                     padding-left: 24px;
@@ -213,9 +213,10 @@ $susy: (
         }
 
         #logo{
-            width: span(9);
+            width: 65.3%;
             float: left;
-            height: 65px;
+            height: 61px;
+            background: rgba(255, 255, 255, 0.5);
 
             #logo-image{
                 max-width: 100%;
@@ -224,8 +225,10 @@ $susy: (
                 img{
                     display: block;
                     margin: 10px auto;
-                    width: 150px;
-                    height: auto;
+                    margin-top: 5px;
+                    padding-left: 73px;
+                    width: auto;
+                    height: 49px;
                 }
             }
         }

@@ -11,9 +11,7 @@ $susy: (
 @media screen and (max-device-width: 480px){
     .news{
         width: 98%;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 28px;
+        margin-top: 88px;
         margin-bottom: 0;
         padding: 0 20px;
 
@@ -35,6 +33,8 @@ $susy: (
                 color: black;
                 text-align: right;
                 top: -8px;
+                margin-right: -11px;
+                letter-spacing: -0.4px;
                 font-size: 16px;
                 float: right;
                 position: absolute;
@@ -52,21 +52,23 @@ $susy: (
                 background: $racc-grey1;
 
                 #spotlight-image{
+                    overflow: hidden;
 
                     img{
-                        width: 100%;
-                        height: auto;
+                        width: auto;
+                        height: 328px;
                     }
                     
                 }
 
                 #spotlight-text{
                     max-width: 100%;
-                    padding: 20px 30px;
+                    padding: 1px 30px;
                     font-family: $racc-font;
                     color: white;
 
                     #sp-title{
+                        margin-top: 13px;
                         font-size: 20px;
                         margin-bottom: 0;
                         line-height: 30px;
@@ -74,6 +76,7 @@ $susy: (
 
                         a{
                             text-decoration: none;
+                            font-weight: 500;
                             color: white;
                         }
                     }
@@ -83,6 +86,7 @@ $susy: (
                     }
 
                     #sp-body{
+                        margin-top: -13px;
                         width: 100%;
                         //display: block;
                         font-size: 0.75rem;
@@ -95,9 +99,9 @@ $susy: (
         }
 
         #other-news{
-            width: 100%;
+            width: 92%;
             float: left;
-            margin-top: 30px;
+            margin-top: 40px;
 
             #news1{
                 width: 98%;
@@ -105,8 +109,16 @@ $susy: (
                 margin-right: 1%;
 
                 img{
-                    max-width: 100%;
-                    height: auto;
+                    width: auto;
+                    height: 319px;
+                }
+
+                p{
+                    color: white;
+                    margin-top: -70px;
+                    margin-left: 20px;
+                    font-family: $racc-font;
+                    font-size: 24px;
                 }
             }
 
@@ -114,10 +126,19 @@ $susy: (
                 width: 98%;
                 margin-left: 1%;
                 margin-right: 1%;
+                margin-top: 70px;
 
                 img{
-                    max-width: 100%;
-                    height: auto;
+                    max-width: auto;
+                    height: 319px;
+                }
+
+                p{
+                    color: white;
+                    margin-top: -70px;
+                    margin-left: 20px;
+                    font-family: $racc-font;
+                    font-size: 24px;
                 }
             }
         }

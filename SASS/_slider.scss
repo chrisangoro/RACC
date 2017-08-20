@@ -115,18 +115,23 @@ $susy: (
 }
 
  @media screen and (max-device-width: 480px){
+
+    .slider-container{
+            height: 550px;
+        }
+
      #slider-inside-text{
-         display: none;
-         margin-left: 0;
-         left: 8vw;
-         margin-top: 24em;
+         position: absolute;
+         z-index: 20;
+         margin-top: 350px;
+         padding: 0 30px;
 
          .slide-title{
 
                 text-decoration: none;
-                font-size: 2.5em;
+                font-size: 34px;
                 letter-spacing: 0;
-                font-weight: 100;
+                font-weight: 300;
                 text-transform: uppercase;
                 line-height: 1.2;
                 color: white;
@@ -137,6 +142,53 @@ $susy: (
              display: none;
          }
      }
+
+     .flex-control-nav{
+        text-align: initial;
+        margin-left: 10em;
+    }
+
+    //ol{
+    .flex-control-paging{
+        z-index: 30;
+        margin-left: 120px;
+        top: 0px;
+        margin-top: 484px;
+
+        li{
+            padding-right: 3px;
+
+            a{
+                content: url(../res/img/NotActiveSlide.png);
+                height: 2px;
+                width: 27px;
+                //margin-left: 5px;
+            }
+
+            .flex-active{
+                content: url(../res/img/ActiveSlide.png);
+                height: 2px;
+                width: 27px;
+            }
+        }
+        
+    }
+
+    .flex-direction-nav{
+
+        a{
+            width: 60px;
+            height: 60px;
+        }
+
+        .flex-nav-prev a::before{
+            content: url(../res/img/sliderback.png);
+        }
+
+        .flex-nav-next a::before{
+            content: url(../res/img/sliderforward.png);
+        }
+    }
  }
 
 .slider{
@@ -152,48 +204,28 @@ $susy: (
     }
 
     @media screen and (max-device-width: 480px){
-        height: 600px;
         width: 100%;
         margin-top: -70px;
+        max-height: 515px;
         //overflow: hidden;
         position: absolute;
         z-index: 10;
         display: block;
 
-    /*
+        .slides{
 
-            .slides{
-                overflow: hidden;
-                height: 600px;
-                width: 1024px;
-                position: absolute;
+            li{
 
-                li{
-
-                    div{
-                        position: relative;
-                        //display: inline-block;
+                div{
+                    
+                    img{
+                        height: 550px;
+                        width: auto;
                         top: 0;
-                        left: 0;
-                        width: 100%;
-                        margin-left: 0;
-
-                        img{
-                            height: 600px;
-                            width: auto;
-                            top: 0;
-                            float: left;
-                        }
+                        float: left;
                     }
                 }
             }
-        }*/
-
-        img{
-            //max-width: 1vw;
-            width: auto;
-            height: 600px;
-            min-height: 600px
         }
     }
 }

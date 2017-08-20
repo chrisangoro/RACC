@@ -9,8 +9,101 @@ $susy: (
 );
 
 @media screen and (max-device-width: 480px){
+    #info-content{
+        background: $racc-red;
+    }
+
     .more-info{
-        display: none;
+
+        #background-img{
+            display: none;
+        }
+
+        #info-container{
+            width: 100%;
+
+            #right-info{
+                background: white;
+                #video{
+                    width: 98%;
+                    margin: 1% auto;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                #right-info-title{
+                    padding: 0 7%;
+                    padding-top: 5%;
+                    font-size: 24px;
+                    font-weight: 300;
+                    font-family: $racc-font;
+                }
+
+                #right-info-text{
+                    padding: 0 7%;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    font-family: $racc-font;
+                }
+            }
+
+            #left-info{
+                padding: 0 5%;
+                font-family: $racc-font;
+
+                h2{
+                    color: white;
+                    font-weight: 300;
+                    padding: 0 4%;
+                }
+
+                p{
+                    color: white;
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 600;
+                    padding: 0 4%;
+                    padding-bottom: 10%;
+                }
+            }
+        }
+    }
+
+    .brands{
+        width: 100%;
+        height: 650px;
+        margin-top: -20px;
+        background: $racc-grey4;
+        ul{
+
+            li{
+                width: 100%;
+                list-style: none;
+
+                img{    
+                    padding-bottom: 50px;
+                    padding-left: 108px;
+                    height: 150px;
+                    width: auto;
+                }
+            }
+        }
+        
+
+        #miller{
+            padding-top: 15%;
+        }
+
+        #schmidt{
+            margin-left: -64px;
+        }
+
+        #foundation{
+            margin-left: -28px;
+        }
     }
 }
 
